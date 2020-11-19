@@ -7,54 +7,54 @@ import java.util.Map;
 
 public class Item {
 
-    public static final Map<String, Integer> GETWEIGHTITEM1;
+    public static final Map<String, Integer> GET_WEIGHT_ITEM_1;
     static {
-        GETWEIGHTITEM1 = new HashMap<>();
-        GETWEIGHTITEM1.put(Data.SMALL, Data.WEIGHTITEM1S);
-        GETWEIGHTITEM1.put(Data.MEDIUM, Data.WEIGHTITEM1M);
-        GETWEIGHTITEM1.put(Data.LARGE, Data.WEIGHTITEM1L);
+        GET_WEIGHT_ITEM_1 = new HashMap<>();
+        GET_WEIGHT_ITEM_1.put(Data.SMALL, Data.WEIGHT_ITEM_1_S);
+        GET_WEIGHT_ITEM_1.put(Data.MEDIUM, Data.WEIGHT_ITEM_1_M);
+        GET_WEIGHT_ITEM_1.put(Data.LARGE, Data.WEIGHT_ITEM_1_L);
     }
 
-    public static final Map<String, Integer> GETWEIGHTITEM2;
+    public static final Map<String, Integer> GET_WEIGHT_ITEM_2;
     static {
-        GETWEIGHTITEM2 = new HashMap<>();
-        GETWEIGHTITEM2.put(Data.SMALL, Data.WEIGHTITEM2S);
-        GETWEIGHTITEM2.put(Data.MEDIUM, Data.WEIGHTITEM2M);
-        GETWEIGHTITEM2.put(Data.LARGE, Data.WEIGHTITEM2L);
+        GET_WEIGHT_ITEM_2 = new HashMap<>();
+        GET_WEIGHT_ITEM_2.put(Data.SMALL, Data.WEIGHT_ITEM_2_S);
+        GET_WEIGHT_ITEM_2.put(Data.MEDIUM, Data.WEIGHT_ITEM_2_M);
+        GET_WEIGHT_ITEM_2.put(Data.LARGE, Data.WEIGHT_ITEM_2_L);
     }
 
-    public static final Map<String, Integer> GETWEIGHTITEM3;
+    public static final Map<String, Integer> GET_WEIGHT_ITEM_3;
     static {
-        GETWEIGHTITEM3 = new HashMap<>();
-        GETWEIGHTITEM3.put(Data.SMALL, Data.WEIGHTITEM3S);
-        GETWEIGHTITEM3.put(Data.MEDIUM, Data.WEIGHTITEM3M);
-        GETWEIGHTITEM3.put(Data.LARGE, Data.WEIGHTITEM3L);
+        GET_WEIGHT_ITEM_3 = new HashMap<>();
+        GET_WEIGHT_ITEM_3.put(Data.SMALL, Data.WEIGHT_ITEM_3_S);
+        GET_WEIGHT_ITEM_3.put(Data.MEDIUM, Data.WEIGHT_ITEM_3_M);
+        GET_WEIGHT_ITEM_3.put(Data.LARGE, Data.WEIGHT_ITEM_3_L);
     }
 
-    public static final Map<String, Integer> GETWEIGHTITEM4;
+    public static final Map<String, Integer> GET_WEIGHT_ITEM_4;
     static {
-        GETWEIGHTITEM4 = new HashMap<>();
-        GETWEIGHTITEM4.put(Data.SMALL, Data.WEIGHTITEM4S);
-        GETWEIGHTITEM4.put(Data.MEDIUM, Data.WEIGHTITEM4M);
-        GETWEIGHTITEM4.put(Data.LARGE, Data.WEIGHTITEM4L);
+        GET_WEIGHT_ITEM_4 = new HashMap<>();
+        GET_WEIGHT_ITEM_4.put(Data.SMALL, Data.WEIGHT_ITEM_4_S);
+        GET_WEIGHT_ITEM_4.put(Data.MEDIUM, Data.WEIGHT_ITEM_4_M);
+        GET_WEIGHT_ITEM_4.put(Data.LARGE, Data.WEIGHT_ITEM_4_L);
     }
 
-    public static final Map<String, Integer> GETWEIGHTITEM5;
+    public static final Map<String, Integer> GET_WEIGHT_ITEM_5;
     static {
-        GETWEIGHTITEM5 = new HashMap<>();
-        GETWEIGHTITEM5.put(Data.SMALL, Data.WEIGHTITEM5S);
-        GETWEIGHTITEM5.put(Data.MEDIUM, Data.WEIGHTITEM5M);
-        GETWEIGHTITEM5.put(Data.LARGE, Data.WEIGHTITEM5L);
+        GET_WEIGHT_ITEM_5 = new HashMap<>();
+        GET_WEIGHT_ITEM_5.put(Data.SMALL, Data.WEIGHT_ITEM_5_S);
+        GET_WEIGHT_ITEM_5.put(Data.MEDIUM, Data.WEIGHT_ITEM_5_M);
+        GET_WEIGHT_ITEM_5.put(Data.LARGE, Data.WEIGHT_ITEM_5_L);
     }
 
     public static Map<String,HashMap> items;
     static {
         items = new HashMap<>();
-        items.put(Data.ITEMNAME1, (HashMap) GETWEIGHTITEM1);
-        items.put(Data.ITEMNAME2, (HashMap) GETWEIGHTITEM2);
-        items.put(Data.ITEMNAME3, (HashMap) GETWEIGHTITEM3);
-        items.put(Data.ITEMNAME4, (HashMap) GETWEIGHTITEM4);
-        items.put(Data.ITEMNAME5, (HashMap) GETWEIGHTITEM5);
+        items.put(Data.ITEM_NAME_1, (HashMap) GET_WEIGHT_ITEM_1);
+        items.put(Data.ITEM_NAME_2, (HashMap) GET_WEIGHT_ITEM_2);
+        items.put(Data.ITEM_NAME_3, (HashMap) GET_WEIGHT_ITEM_3);
+        items.put(Data.ITEM_NAME_4, (HashMap) GET_WEIGHT_ITEM_4);
+        items.put(Data.ITEM_NAME_5, (HashMap) GET_WEIGHT_ITEM_5);
     }
 
 

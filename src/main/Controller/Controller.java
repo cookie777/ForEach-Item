@@ -100,7 +100,7 @@ public class Controller {
     listView.setItems(itemData);
 
     //Setting the item label
-    itemLabel.setText("Choose the item");
+    itemLabel.setText(Data.DEFAULT_VALUE);
     itemLabel.setLayoutX(itemLabelPosX);
     itemLabel.setLayoutY(itemLabelPosY);
 
@@ -179,17 +179,16 @@ public class Controller {
   @FXML
   public void calculateClick(MouseEvent arg0) {
     String selectedItem =  itemLabel.getText();
-    System.out.println(selectedItem);
 
     RadioButton selectedRadioButton = (RadioButton) group.getSelectedToggle();
     String toogleGroupValue = selectedRadioButton.getText();
-    System.out.println(toogleGroupValue);
 
     String inputPrice = priceFiled.getText();
-    System.out.println(inputPrice);
 
+    String finalPrice = new String();
     Conversion c = new Conversion();
-    String finalPrice = c.priceForEach(toogleGroupValue, inputPrice, selectedItem);
+
+    finalPrice = c.priceForEach(toogleGroupValue, inputPrice, selectedItem);
 
     setResultValue(finalPrice);
 
