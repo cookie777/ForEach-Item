@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<HBox xmlns="http://javafx.com/javafx"
+  xmlns:fx="http://javafx.com/fxml"
+  fx:controller="main.Controller.Controller">
+  <AnchorPane prefHeight="480" prefWidth="240" styleClass="a">
+    <ListView fx:id="listView" onMouseClicked="#itemClick"/>
+  </AnchorPane>
+  <AnchorPane prefHeight="480" prefWidth="608" styleClass="b">
+    <Label fx:id="itemLabel"></Label>
+    <TextField fx:id="priceFiled"></TextField>
+    <TilePane fx:id="sizeButton"></TilePane>
+    <Button fx:id="calculateButton" onMouseClicked="#calculateClick"></Button>
+    <Label fx:id="resultValue"></Label>
+
+  </AnchorPane>
+</HBox>
+
