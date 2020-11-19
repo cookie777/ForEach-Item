@@ -17,17 +17,18 @@
 
     <Label fx:id="itemLabel"></Label>
 
-    <Label fx:id="dollarLabel"></Label>
+    <Label fx:id="dollarLabel" styleClass="inputLabel"></Label>
     <TextField fx:id="priceFiled"></TextField>
-    <Label fx:id="lbLabel"></Label>
+    <Label fx:id="lbLabel" styleClass="inputLabel"></Label>
 
     <TilePane fx:id="sizeButton"></TilePane>
 
     <Button fx:id="calculateButton" onMouseClicked="#calculateClick"></Button>
 
-    <Label fx:id="resultDollarLabel"></Label>
+    <Label fx:id="resultExplanation" styleClass="result"></Label>
+    <Label fx:id="resultDollarLabel" styleClass="result"></Label>
     <Label fx:id="resultValue"></Label>
-    <Label fx:id="resultPerUnitLabel"></Label>
+    <Label fx:id="resultPerPieceLabel" styleClass="result"></Label>
 
   </AnchorPane>
 </HBox>

@@ -1,18 +1,30 @@
+#resultValue{
+  -fx-font-family: 'Montserrat', sans-serif;
+  -fx-font-size: 32px;
+  -fx-text-fill: #2ECC71;
+}
+
+.result{
+  -fx-font-family: 'Montserrat', sans-serif;
+  -fx-font-size: 24px;
+}
+
 
 #itemLabel{
-  -fx-font-family: 'Poppins', sans-serif;
+  -fx-font-weight: 600;
+  -fx-font-family: 'Montserrat', sans-serif;
   -fx-font-size: 32px;
 }
 
-#dollarLabel, #lbLabel{
-  -fx-font-family: 'Poppins', sans-serif;
+.inputLabel{
+  -fx-font-family: 'Montserrat', sans-serif;
   -fx-font-size: 22px;
 }
 
 
 .list-cell{
   -fx-font-weight: 300;
-  -fx-font-family: 'Poppins', sans-serif;
-  -fx-font-size: 40px;
+  -fx-font-family: 'Montserrat', sans-serif;
+  -fx-font-size: 24px;
 
 }

@@ -50,13 +50,16 @@ public class Controller {
   private ToggleGroup group = new ToggleGroup();
 
   @FXML
+  private Label resultExplanation = new Label();
+
+  @FXML
   private Label resultDollarLabel = new Label();
 
   @FXML
   private Label resultValue = new Label();
 
   @FXML
-  private Label resultPerUnitLabel = new Label();
+  private Label resultPerPieceLabel = new Label();
 
 
   int marginLL = 32;
@@ -82,7 +85,9 @@ public class Controller {
   int calButtonHeight = 40;
 
   int resultPosX = 64;
-  int resultPosY = 400;
+  int resultPosY = 360;
+  int resultValueWidth = 160;
+  int resultValueHeight = 40;
 
 
   @FXML
@@ -145,18 +150,22 @@ public class Controller {
     calculateButton.setLayoutY(calButtonPosY);
 
     //Set the result
+    resultExplanation.setText("Your item is around");
+    resultExplanation.setLayoutX(resultPosX);
+    resultExplanation.setLayoutY(resultPosY);
+
     resultDollarLabel.setText("$");
     resultDollarLabel.setLayoutX(resultPosX);
-    resultDollarLabel.setLayoutY(resultPosY);
+    resultDollarLabel.setLayoutY(resultPosY+marginL+marginLL);
 
-    resultValue.setText("no result");
+    resultValue.setText("");
     resultValue.setLayoutX(resultPosX+marginLL);
-    resultValue.setLayoutY(resultPosY);
+    resultValue.setLayoutY(resultPosY+18+marginLL);
 
 
-    resultDollarLabel.setText("/ per piece");
-    resultDollarLabel.setLayoutX(resultPosX+120);
-    resultDollarLabel.setLayoutY(resultPosY);
+    resultPerPieceLabel.setText("/ per piece");
+    resultPerPieceLabel.setLayoutX(resultPosX+resultValueWidth);
+    resultPerPieceLabel.setLayoutY(resultPosY+marginL+marginLL);
 
   }
 
