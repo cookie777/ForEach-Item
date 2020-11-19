@@ -1,0 +1,12 @@
+.a {
+  -fx-background-color: blue;
+}
+
+.b {
+  -fx-background-color: red;
+}
+
+.list-cell{
+  -fx-font-size: 40px;
+//  -fx-background-color: red;
+}

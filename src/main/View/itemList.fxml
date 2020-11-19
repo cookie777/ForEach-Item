@@ -5,10 +5,13 @@
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane xmlns="http://javafx.com/javafx"
   xmlns:fx="http://javafx.com/fxml"
-  fx:controller="main.View.ItemList"
-  prefHeight="400.0" prefWidth="600.0">
+  fx:controller="main.Controller.Controller"
+  prefHeight="480" prefWidth="240" styleClass="a">
+
+  <ListView fx:id="listView" onMouseClicked="#handleMouseClick"/>
 
 </AnchorPane>
