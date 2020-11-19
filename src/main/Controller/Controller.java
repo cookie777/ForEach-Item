@@ -19,6 +19,8 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.TilePane;
 import javax.xml.soap.Text;
 import main.Model.Conversion;
+import main.Model.Data;
+import main.Model.Item;
 
 public class Controller {
 
@@ -47,9 +49,10 @@ public class Controller {
   @FXML
   public void initialize(){
     listView.setMinHeight(480);
-    itemData.add("apple");
-    itemData.add("banana");
-    itemData.add("orange");
+    for (String itemName : Item.items.keySet()) {
+      itemData.add(itemName);
+    }
+
     listView.setItems(itemData);
 
     itemLabel.setText("Defualt value");
@@ -61,9 +64,10 @@ public class Controller {
     // add label
 //    r.getChildren().add(l);
     // create radio buttons
-    RadioButton r1 = new RadioButton("Small");
-    RadioButton r2 = new RadioButton("Medium");
-    RadioButton r3 = new RadioButton("Large");
+
+    RadioButton r1 = new RadioButton(Data.SMALL);
+    RadioButton r2 = new RadioButton(Data.MEDIUM);
+    RadioButton r3 = new RadioButton(Data.LARGE);
     r1.setToggleGroup(group);
     r2.setToggleGroup(group);
     r3.setToggleGroup(group);
@@ -108,8 +112,9 @@ public class Controller {
     System.out.println(inputPrice);
 
     Conversion c = new Conversion();
-    String value = c.test(selectedItem);
-    setResultValue(value);
+    String finalPrice = c.priceForEach(toogleGroupValue, inputPrice, selectedItem);
+
+    setResultValue(finalPrice);
 
   }
 
