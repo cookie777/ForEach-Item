@@ -14,11 +14,20 @@
     <ListView fx:id="listView" onMouseClicked="#itemClick"/>
   </AnchorPane>
   <AnchorPane prefHeight="480" prefWidth="608" styleClass="b">
+
     <Label fx:id="itemLabel"></Label>
+
+    <Label fx:id="dollarLabel"></Label>
     <TextField fx:id="priceFiled"></TextField>
+    <Label fx:id="lbLabel"></Label>
+
     <TilePane fx:id="sizeButton"></TilePane>
+
     <Button fx:id="calculateButton" onMouseClicked="#calculateClick"></Button>
+
+    <Label fx:id="resultDollarLabel"></Label>
     <Label fx:id="resultValue"></Label>
+    <Label fx:id="resultPerUnitLabel"></Label>
 
   </AnchorPane>
 </HBox>

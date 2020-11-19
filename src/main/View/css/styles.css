@@ -1,12 +1,18 @@
-.a {
-  -fx-background-color: blue;
+
+#itemLabel{
+  -fx-font-family: 'Poppins', sans-serif;
+  -fx-font-size: 32px;
 }
 
-.b {
-  -fx-background-color: white;
+#dollarLabel, #lbLabel{
+  -fx-font-family: 'Poppins', sans-serif;
+  -fx-font-size: 22px;
 }
+
 
 .list-cell{
+  -fx-font-weight: 300;
+  -fx-font-family: 'Poppins', sans-serif;
   -fx-font-size: 40px;
-//  -fx-background-color: red;
+
 }

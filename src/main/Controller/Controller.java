@@ -31,6 +31,12 @@ public class Controller {
   private Label itemLabel = new Label();
 
   @FXML
+  private Label dollarLabel = new Label();
+
+  @FXML
+  private Label lbLabel = new Label();
+
+  @FXML
   private TextField priceFiled = new TextField();
 
   @FXML
@@ -42,7 +48,40 @@ public class Controller {
   private ToggleGroup group = new ToggleGroup();
 
   @FXML
+  private Label resultDollarLabel = new Label();
+
+  @FXML
   private Label resultValue = new Label();
+
+  @FXML
+  private Label resultPerUnitLabel = new Label();
+
+
+  int marginLL = 32;
+  int marginL = 24;
+  int marginM = 16;
+  int marginS = 8;
+
+
+  int itemLabelPosX = 64;
+  int itemLabelPosY = 24;
+
+  int pricePosX = 64;
+  int pricePosY = 84;
+  int inputFieldWidth = 120;
+  int inputFieldHeight = 40;
+
+  int radiobuttonPosX = 64;
+  int radiobuttonPosY = 136;
+
+  int calButtonPosX = 400;
+  int calButtonPosY = 200;
+  int calButtonWidth = 120;
+  int calButtonHeight = 40;
+
+  int resultPosX = 64;
+  int resultPosY = 400;
+
 
   @FXML
   public void initialize(){
@@ -52,14 +91,34 @@ public class Controller {
     itemData.add("orange");
     listView.setItems(itemData);
 
-    itemLabel.setText("Defualt value");
-    priceFiled.setLayoutX(50);
-    priceFiled.setLayoutY(50);
+    //Setting the item label
+    itemLabel.setText("Choose the item");
+    itemLabel.setLayoutX(itemLabelPosX);
+    itemLabel.setLayoutY(itemLabelPosY);
+
+    //Setting the $ label
+    dollarLabel.setText("$");
+    dollarLabel.setLayoutX(pricePosX);
+    dollarLabel.setLayoutY(pricePosY);
+
+    //Setting the input field
+    priceFiled.setPrefWidth(inputFieldWidth);
+    priceFiled.setPrefHeight(inputFieldHeight);
+    priceFiled.setLayoutX(pricePosX+marginL);
+    priceFiled.setLayoutY(pricePosY-marginS);
+
+
+    //Setting the input field
+    lbLabel.setText("lb");
+    lbLabel.setLayoutX(pricePosX+inputFieldWidth+marginL+marginM);
+    lbLabel.setLayoutY(pricePosY);
+
 
 
 //    Label l = new Label("This is a Radiobutton example ");
-    // add label
 //    r.getChildren().add(l);
+
+    //Setting the radio botton
     // create radio buttons
     RadioButton r1 = new RadioButton("Small");
     RadioButton r2 = new RadioButton("Medium");
@@ -67,24 +126,33 @@ public class Controller {
     r1.setToggleGroup(group);
     r2.setToggleGroup(group);
     r3.setToggleGroup(group);
-
     r1.setSelected(true);
-
     sizeButton.getChildren().add(r1);
     sizeButton.getChildren().add(r2);
     sizeButton.getChildren().add(r3);
-//
-    sizeButton.setLayoutX(50);
-    sizeButton.setLayoutY(100);
+    sizeButton.setLayoutX(radiobuttonPosX);
+    sizeButton.setLayoutY(radiobuttonPosY);
 
+
+    //Set the calculation Button
     calculateButton.setText("Calculate");
-    calculateButton.setPrefSize(80,40);
-    calculateButton.setLayoutX(50);
-    calculateButton.setLayoutY(150);
+    calculateButton.setPrefSize(calButtonWidth,calButtonHeight);
+    calculateButton.setLayoutX(calButtonPosX);
+    calculateButton.setLayoutY(calButtonPosY);
 
-    resultValue.setLayoutX(50);
-    resultValue.setLayoutY(200);
+    //Set the result
+    resultDollarLabel.setText("$");
+    resultDollarLabel.setLayoutX(resultPosX);
+    resultDollarLabel.setLayoutY(resultPosY);
+
     resultValue.setText("no result");
+    resultValue.setLayoutX(resultPosX+marginLL);
+    resultValue.setLayoutY(resultPosY);
+
+
+    resultDollarLabel.setText("/ per piece");
+    resultDollarLabel.setLayoutX(resultPosX+120);
+    resultDollarLabel.setLayoutY(resultPosY);
 
   }
 
