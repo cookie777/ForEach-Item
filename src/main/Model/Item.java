@@ -47,14 +47,14 @@ public class Item {
         GETWEIGHTITEM5.put(Data.LARGE, Data.WEIGHTITEM5L);
     }
 
-    public static Map<String,HashMap> Items;
+    public static Map<String,HashMap> items;
     static {
-        Items = new HashMap<>();
-        Items.put(Data.ITEMNAME1, (HashMap) GETWEIGHTITEM1);
-        Items.put(Data.ITEMNAME2, (HashMap) GETWEIGHTITEM2);
-        Items.put(Data.ITEMNAME3, (HashMap) GETWEIGHTITEM3);
-        Items.put(Data.ITEMNAME4, (HashMap) GETWEIGHTITEM4);
-        Items.put(Data.ITEMNAME5, (HashMap) GETWEIGHTITEM5);
+        items = new HashMap<>();
+        items.put(Data.ITEMNAME1, (HashMap) GETWEIGHTITEM1);
+        items.put(Data.ITEMNAME2, (HashMap) GETWEIGHTITEM2);
+        items.put(Data.ITEMNAME3, (HashMap) GETWEIGHTITEM3);
+        items.put(Data.ITEMNAME4, (HashMap) GETWEIGHTITEM4);
+        items.put(Data.ITEMNAME5, (HashMap) GETWEIGHTITEM5);
     }
 
 
