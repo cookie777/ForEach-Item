@@ -12,7 +12,7 @@ public class Data {
     public static final String NO_ITEM = "Please select an item.";
     public static final String NO_PRICE = "Please input a price.";
     public static final String NO_VALID_PRICE = "Please input a valid price.";
-    public static final String DEFAULT_VALUE = "Default Value";
+    public static final String DEFAULT_VALUE = "Select an item";
     static final String ITEM_NAME_1 = "Banana";
     static final String ITEM_NAME_2 = "Apple";
     static final String ITEM_NAME_3 = "Orange";
