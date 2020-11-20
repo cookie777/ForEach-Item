@@ -179,7 +179,7 @@ public class Controller {
     productLabel.setLayoutY(productLabelPosY);
 
     SpinnerValueFactory<Integer> valueFactory = //
-        new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 100, 1);
+            new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 100, 1);
     quantitySpinner.setValueFactory(valueFactory);
     quantitySpinner.getStyleClass().add(Spinner.STYLE_CLASS_SPLIT_ARROWS_HORIZONTAL);
     quantitySpinner.setPrefSize(quantitySpinnerWidth,inputFieldHeight);
@@ -257,7 +257,6 @@ public class Controller {
   @FXML
   public void itemClick(MouseEvent arg0) {
     String clickedItemName = listView.getSelectionModel().getSelectedItem();
-    System.out.println("click on " + clickedItemName);
     itemLabel.setText(clickedItemName);
   }
 
@@ -271,29 +270,31 @@ public class Controller {
 
     String inputPrice = priceFiled.getText();
 
-    int quantity = quantitySpinner.getValue();
+    Integer quantity = quantitySpinner.getValue();
 
-    String finalPrice = new String();
-    Conversion c = new Conversion();
+    String[] finalPrices;
+    String finalPrice;
+    String totalPrice;
 
-    finalPrice = c.priceForEach(toogleGroupValue, inputPrice, selectedItem);
-
-    ValidateResult(finalPrice);
+    finalPrices = Conversion.priceForEach(toogleGroupValue, inputPrice, selectedItem, quantity);
+    finalPrice = finalPrices[0];
+    totalPrice = finalPrices[1];
+    ValidateResult(finalPrice, totalPrice);
 
   }
 
-  public void ValidateResult(String finalPrice){
+  public void ValidateResult(String finalPrice, String totalPrice){
     if ((finalPrice.equals(Data.NO_ITEM) || finalPrice.equals(Data.NO_PRICE) || finalPrice.equals(Data.NO_VALID_PRICE))){
       setErrorMessage(finalPrice);
     }else {
-      setResultValue(finalPrice);
+      setResultValue(finalPrice, totalPrice);
     }
 
   }
 
-  public void setResultValue(String price){
-    resultValue.setText(price);
-    resultTotalValue.setText("12.65"); //place holder
+  public void setResultValue(String priceUnit, String priceTotal){
+    resultValue.setText(priceUnit);
+    resultTotalValue.setText(priceTotal);
   }
 
   public void setErrorMessage(String finalPrice){
