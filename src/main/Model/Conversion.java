@@ -1,33 +1,42 @@
 package main.Model;
 
-import main.Controller.Controller;
-
 public class Conversion {
 
-  public String priceForEach(String toogleGroupValue, String inputPrice, String selectedItem){
+  public static String[] priceForEach(String toogleGroupValue, String inputPrice, String selectedItem, Integer quantity){
 
-    Double price;
+    Double priceUnit;
+    Double priceTotal;
     Integer gramsPerUnitSmall;
     Integer gramsPerUnitMedium;
     Integer gramsPerUnitLarge;
+    String[] result = new String[2];
+    String finalPriceUnit;
+    String finalPriceTotal;
 
     if (selectedItem.equals(Data.DEFAULT_VALUE)) {
-      return Data.NO_ITEM;
+      result[0] = Data.NO_ITEM;
+      return result;
     }
 
     if (inputPrice.isEmpty()) {
-      return Data.NO_PRICE;
+      result[0] = Data.NO_PRICE;
+      return result;
     }
 
     try
     {
-      price = Double.parseDouble(inputPrice);
+      priceUnit = Double.parseDouble(inputPrice);
     }
     catch(NumberFormatException e)
     {
-      return Data.NO_VALID_PRICE;
+      result[0] = Data.NO_VALID_PRICE;
+      return result;
     }
 
+    if (priceUnit < 0) {
+      result[0] = Data.NO_VALID_PRICE;
+      return result;
+    }
 
     gramsPerUnitSmall = (Integer) Item.items.get(selectedItem).get(Data.SMALL);
     gramsPerUnitMedium = (Integer) Item.items.get(selectedItem).get(Data.MEDIUM);
@@ -35,20 +44,23 @@ public class Conversion {
 
     switch (toogleGroupValue) {
       case (Data.SMALL):
-        price = gramsPerUnitSmall * price / Data.GRAMS_PER_LB;
+        priceUnit = gramsPerUnitSmall * priceUnit / Data.GRAMS_PER_LB;
         break;
       case (Data.MEDIUM):
-        price = gramsPerUnitMedium * price / Data.GRAMS_PER_LB;
+        priceUnit = gramsPerUnitMedium * priceUnit / Data.GRAMS_PER_LB;
         break;
       case (Data.LARGE):
-        price = gramsPerUnitLarge * price / Data.GRAMS_PER_LB;
+        priceUnit = gramsPerUnitLarge * priceUnit / Data.GRAMS_PER_LB;
         break;
     }
 
-    String finalPrice = String.format("%.2f", price);
+    priceTotal = quantity * priceUnit;
+    finalPriceUnit = String.format("%.2f", priceUnit);
+    finalPriceTotal = String.format("%.2f", priceTotal);
+    result[0] = finalPriceUnit;
+    result[1] = finalPriceTotal;
 
-
-    return finalPrice;
+    return result;
   }
 
 }
