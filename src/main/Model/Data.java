@@ -5,10 +5,21 @@ import com.sun.xml.internal.fastinfoset.util.StringArray;
 public class Data {
 
     public static final Double GRAMS_PER_LB = 453.592;
+    public static final Integer MAX_VALUE = 1000;
+    public static final Integer MIN_VALUE = 0;
+    public static final String CALCULATE = "Calculate";
+    public static final String DOLLAR_SIGN = "$";
+    public static final String QUANTITY = "quantity";
+    public static final String LB = "lb";
+    public static final String X = "x";
+    public static final String BUY_ONE = "If you buy one, it will cost";
+    public static final String EMPTY = "";
+    public static final String TOTAL_PRICE = "Your total price is";
+    public static final String PER_PIECE = "/ per piece";
+
     public static final String SMALL = "Small";
     public static final String MEDIUM = "Medium";
     public static final String LARGE = "Large";
-    public static final String FINAL_PRICE_MSG = "Price per unit is $";
     public static final String NO_ITEM = "Please select an item.";
     public static final String NO_PRICE = "Please input a price.";
     public static final String NO_VALID_PRICE = "Please input a valid price.";

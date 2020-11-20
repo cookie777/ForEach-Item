@@ -156,12 +156,12 @@ public class Controller {
     itemLabel.setLayoutY(itemLabelPosY);
 
     //Setting the $ label
-    dollarLabel.setText("$");
+    dollarLabel.setText(Data.DOLLAR_SIGN);
     dollarLabel.setLayoutX(pricePosX);
     dollarLabel.setLayoutY(pricePosY);
 
     //Setting the input field
-    priceFiled.setText("0");
+    priceFiled.setText(Data.MIN_VALUE.toString());
     priceFiled.setPrefWidth(inputFieldWidth);
     priceFiled.setPrefHeight(inputFieldHeight);
     priceFiled.setLayoutX(pricePosX+marginL);
@@ -169,12 +169,12 @@ public class Controller {
 
 
     //Setting the input field
-    lbLabel.setText("lb");
+    lbLabel.setText(Data.LB);
     lbLabel.setLayoutX(lbLabelPosX);
     lbLabel.setLayoutY(lbLabelPosY);
 
 
-    productLabel.setText("x");
+    productLabel.setText(Data.X);
     productLabel.setLayoutX(productLabelPosX);
     productLabel.setLayoutY(productLabelPosY);
 
@@ -186,7 +186,7 @@ public class Controller {
     quantitySpinner.setLayoutX(quantitySpinnerPosX);
     quantitySpinner.setLayoutY(quantitySpinnerPosY);
 
-    quantityLabel.setText("quantity");
+    quantityLabel.setText(Data.QUANTITY);
     quantityLabel.setLayoutX(quantityLabelPosX);
     quantityLabel.setLayoutY(quantityLabelPosY);
 
@@ -215,39 +215,39 @@ public class Controller {
 
 
     //Set the calculation Button
-    calculateButton.setText("Calculate");
+    calculateButton.setText(Data.CALCULATE);
     calculateButton.setPrefSize(calButtonWidth,calButtonHeight);
     calculateButton.setLayoutX(calButtonPosX);
     calculateButton.setLayoutY(calButtonPosY);
 
     //Set the result
-    resultExplanation.setText("If you buy one, it will cost");
+    resultExplanation.setText(Data.BUY_ONE);
     resultExplanation.setLayoutX(resultPosX);
     resultExplanation.setLayoutY(resultPosY);
 
-    resultDollarLabel.setText("$");
+    resultDollarLabel.setText(Data.DOLLAR_SIGN);
     resultDollarLabel.setLayoutX(resultPosX);
     resultDollarLabel.setLayoutY(resultPosY+36);
 
-    resultValue.setText("");
+    resultValue.setText(Data.EMPTY);
     resultValue.setLayoutX(resultPosX+marginLL);
     resultValue.setLayoutY(resultPosY+26);
 
 
-    resultPerPieceLabel.setText("/ per piece");
+    resultPerPieceLabel.setText(Data.PER_PIECE);
     resultPerPieceLabel.setLayoutX(resultPosX+resultValueWidth);
     resultPerPieceLabel.setLayoutY(resultPosY+36);
 
     //Set the total result
-    resultTotalExplanation.setText("Your total price is");
+    resultTotalExplanation.setText(Data.TOTAL_PRICE);
     resultTotalExplanation.setLayoutX(resultTotalPosX);
     resultTotalExplanation.setLayoutY(resultTotalPosY);
 
-    resultTotalDollarLabel.setText("$");
+    resultTotalDollarLabel.setText(Data.DOLLAR_SIGN);
     resultTotalDollarLabel.setLayoutX(resultTotalPosX);
     resultTotalDollarLabel.setLayoutY(resultTotalPosY+36);
 
-    resultTotalValue.setText("");
+    resultTotalValue.setText(Data.EMPTY);
     resultTotalValue.setLayoutX(resultTotalPosX+marginLL);
     resultTotalValue.setLayoutY(resultTotalPosY+26);
 
@@ -262,7 +262,7 @@ public class Controller {
 
   @FXML
   public void calculateClick(MouseEvent arg0) {
-    errorAnnotation.setText("");
+    errorAnnotation.setText(Data.EMPTY);
     String selectedItem =  itemLabel.getText();
 
     RadioButton selectedRadioButton = (RadioButton) group.getSelectedToggle();

@@ -33,7 +33,7 @@ public class Conversion {
       return result;
     }
 
-    if (priceUnit < 0) {
+    if (priceUnit < Data.MIN_VALUE || priceUnit > Data.MAX_VALUE) {
       result[0] = Data.NO_VALID_PRICE;
       return result;
     }
