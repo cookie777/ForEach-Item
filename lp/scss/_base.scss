@@ -1,0 +1,49 @@
+@import "variables";
+
+body {
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    color: $secondary-color;
+    max-width: 1034px;
+    margin: 0 auto;
+}
+
+// reset a tag
+a{
+    text-decoration: none;
+    &:link{
+        color: $secondary-color;
+    }
+    &:visited{
+        color: $secondary-color;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+// basic font setting
+h1 {
+    font-weight: 900;
+    font-size: 4.5em;
+    line-height: 117.5%;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 2.25em;
+}
+
+h3 {
+    font-weight: 900;
+    font-size: 1.5em;
+}
+
+p {
+    font-weight: 300;
+    font-size: 1.126rem;
+    line-height: 184%;
+    letter-spacing: 2%;
+}
