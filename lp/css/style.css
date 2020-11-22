@@ -50,9 +50,48 @@ header {
   margin-top: 2rem;
   margin-bottom: 6rem;
 }
+header img {
+  max-width: 176px;
+}
 header ul {
   display: flex;
 }
 header ul li {
   padding-left: 4rem;
+}
+
+.userStory {
+  max-width: 858px;
+  margin: 0 auto;
+}
+.userStory .scene {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+.userStory .scene:last-child {
+  margin-bottom: 0;
+}
+.userStory img {
+  max-width: 20.5rem;
+}
+.userStory .description {
+  max-width: 31.5rem;
+  min-width: 15rem;
+}
+.userStory .description h3 {
+  padding-bottom: 2rem;
+}
+.userStory span {
+  position: relative;
+}
+.userStory span:before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  background: #5bbe0d;
+  height: 0.5rem;
+  bottom: -0.25rem;
+  z-index: -1;
 }

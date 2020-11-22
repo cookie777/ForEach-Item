@@ -1,0 +1,44 @@
+@import "variables";
+
+.userStory{
+
+    max-width: 858px;
+    margin: 0 auto;
+
+    .scene{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 4rem;
+        &:last-child{margin-bottom: 0;}
+    }
+
+    img{
+        max-width: 20.5rem;//416px
+        // min-width: 15rem;//240px
+    }
+    
+    .description{
+        max-width: 31.5rem;//504px
+        min-width: 15rem;//240px
+        h3{
+            padding-bottom: 2rem;
+        }
+    }
+
+    span{
+        position: relative;
+        &:before{
+            content: ' ';
+            position: absolute;
+            width: 100%;
+            background: $accent-color;
+            height: 0.5rem;
+            bottom: -0.25rem;
+            z-index: -1;
+        }
+    }
+}
+
+
+
