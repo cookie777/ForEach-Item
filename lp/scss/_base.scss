@@ -1,15 +1,19 @@
 @import "variables";
 
 // helper boarder that let you easier to understand each block
-// * { 
-//     outline: 2px solid rgba(218, 65, 65, 0.426);
-//     outline-offset: -1px;
-//   }
+* { 
+    outline: 2px solid rgba(218, 65, 65, 0.426);
+    outline-offset: -1px;
+  }
+
+html{
+    font-size: 16px;
+}
 
 body {
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
-    font-size: 16px;
+    font-size: 30px;
     color: $secondary-color;
     max-width: 1034px;
     margin: 0 auto;
@@ -33,18 +37,20 @@ img {
 // basic font setting
 h1 {
     font-weight: 900;
-    font-size: 4.5em;
+    font-size: 4.5rem;
     line-height: 117.5%;
 }
 
 h2 {
     font-weight: 900;
-    font-size: 2.25em;
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
 }
 
 h3 {
     font-weight: 900;
-    font-size: 1.5em;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 p {
@@ -52,4 +58,8 @@ p {
     font-size: 1.126rem;
     line-height: 184%;
     letter-spacing: 2%;
+}
+
+section{
+    margin-bottom: 6rem;
 }
