@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<HBox xmlns="http://javafx.com/javafx"
+  xmlns:fx="http://javafx.com/fxml"
+  fx:controller="main.Controller.Controller"
+  fx:id="superView">
+    <AnchorPane prefHeight="480" prefWidth="240">
+      <ListView fx:id="listView" onMouseClicked="#itemClick"/>
+    </AnchorPane>
+    <AnchorPane fx:id="mainView" prefHeight="480" prefWidth="608">
+      <AnchorPane prefHeight="240" prefWidth="608">
+
+        <Label fx:id="itemLabel"></Label>
+
+        <Label fx:id="dollarLabel" styleClass="inputLabel"></Label>
+        <TextField fx:id="priceFiled"></TextField>
+        <Label fx:id="lbLabel" styleClass="inputLabel"></Label>
+
+
+        <Label fx:id="productLabel" styleClass="inputLabel"></Label>
+        <Spinner fx:id="quantitySpinner"></Spinner>
+        <Label fx:id="quantityLabel" styleClass="inputLabel"></Label>
+
+
+        <TilePane fx:id="sizeButton"></TilePane>
+
+
+        <Button fx:id="calculateButton" onMouseClicked="#calculateClick"></Button>
+        <Label fx:id="errorAnnotation" styleClass="errorMessage"></Label>
+      </AnchorPane>
+      <AnchorPane prefHeight="240" prefWidth="608" layoutY="300">
+        <Label fx:id="resultExplanation" styleClass="resultDescription"></Label>
+        <Label fx:id="resultDollarLabel" styleClass="resultUnit"></Label>
+        <Label fx:id="resultValue" styleClass="resultValue"></Label>
+        <Label fx:id="resultPerPieceLabel" styleClass="resultUnit"></Label>
+
+        <Label fx:id="resultTotalExplanation" styleClass="resultDescription"></Label>
+        <Label fx:id="resultTotalDollarLabel" styleClass="resultUnit"></Label>
+        <Label fx:id="resultTotalValue" styleClass="resultValue"></Label>
+
+
+
+      </AnchorPane>
+    </AnchorPane>
+</HBox>
+

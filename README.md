@@ -5,6 +5,6 @@ ForEachItem is an application which allows you to know each price per unit of fo
 JavaFX1.x
 
 ## Contributing
-Denilo
+Danilo
 Shintaro
 Takayuki
