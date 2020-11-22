@@ -1,0 +1,12 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    ul {
+        display: flex;
+        li {
+            padding-left: 4rem;
+        }
+    }
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+}
