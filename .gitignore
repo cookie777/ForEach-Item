@@ -26,6 +26,8 @@ hs_err_pid*
 
 #↓ In addition to default settings
 .idea
+.DS_Store
+prepros.config
 
 
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
