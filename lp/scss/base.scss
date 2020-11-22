@@ -1,8 +1,7 @@
-$main-color: #ffffff;
-$secondary-color: #3b3f38;
-$accent-color: #5bbe0d;
+@import "variables";
 
 body {
+    box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
     color: $secondary-color;
@@ -10,13 +9,32 @@ body {
     margin: 0 auto;
 }
 
+a{
+    text-decoration: none;
+    &:link{
+        color: $secondary-color;
+    }
+    &:visited{
+        color: $secondary-color;
+    }
+}
 
 img {
     max-width: 100%;
 }
 
+h1 {
+    font-weight: 900;
+    font-size: 4.5em;
+}
+
+
+h2 {
+    font-weight: 900;
+    font-size: 2.25em;
+}
+
 h3 {
     font-weight: 900;
     font-size: 1.5em;
-
 }
