@@ -24,6 +24,7 @@ img {
 h1 {
   font-weight: 900;
   font-size: 4.5em;
+  line-height: 117.5%;
 }
 
 h2 {
@@ -34,6 +35,13 @@ h2 {
 h3 {
   font-weight: 900;
   font-size: 1.5em;
+}
+
+p {
+  font-weight: 300;
+  font-size: 1.126rem;
+  line-height: 184%;
+  letter-spacing: 2%;
 }
 
 header {
@@ -47,47 +55,4 @@ header ul {
 }
 header ul li {
   padding-left: 4rem;
-}
-
-.mv {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1920px;
-  height: 50vw;
-  background-image: url(../img/mv-bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top -50px center;
-  margin-bottom: 80px;
-}
-.mv .h1 {
-  padding-top: 20px;
-  font-size: 10vw;
-  color: white;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-}
-
-.about ul {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 1000px;
-  background-color: red;
-}
-.about li {
-  width: 30%;
-  height: 50px;
-  background-color: gray;
-}
-.about li.therd {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.about li .circle {
-  width: 30px;
-  height: 30px;
-  background-color: green;
-  border-radius: 50%;
 }
