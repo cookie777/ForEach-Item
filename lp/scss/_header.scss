@@ -1,6 +1,10 @@
 header{
     display: flex;
     justify-content: space-between;
+    img{
+        max-width: 176px;
+    }
+
     ul {
         display: flex;
         li {
