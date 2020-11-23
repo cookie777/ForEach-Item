@@ -1,10 +1,10 @@
 @import "variables";
 
 // helper boarder that let you easier to understand each block
-* { 
-    outline: 2px solid rgba(218, 65, 65, 0.426);
-    outline-offset: -1px;
-  }
+// * { 
+//     outline: 2px solid rgba(218, 65, 65, 0.426);
+//     outline-offset: -1px;
+//   }
 
 html{
     font-size: 12.5px;
@@ -18,10 +18,13 @@ body {
     font-family: 'Rubik', sans-serif;
     font-size: 30px;
     color: $secondary-color;
-    max-width: 1098px;
+    max-width: 1096px;
     min-width: 320px;
     margin: 0 auto;
-    padding: 0 2rem;
+}
+
+.wrapper{
+    margin: 2rem 2rem 0 2rem;
 }
 
 // reset a tag

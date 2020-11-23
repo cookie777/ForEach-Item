@@ -7,9 +7,12 @@
         margin-left: calc(50% - 50vw);
 
         .title{
-            max-width: 1034px;
+            max-width: 1032px;
             margin: 0 auto;
-            padding: 2rem 2rem;
+            padding: 2rem;
+            @media (min-width: 1032px) {
+                padding: 2rem 0;
+            }
         }
     }
     
@@ -21,7 +24,7 @@
             justify-content: space-around;
 
             //to draw lines only in grid, use grid gap as boarder
-            gap: 1.5px; 
+            gap: 1px; 
             background-color:rgba($color: $secondary-color, $alpha: 0.3);
 
             .card{
@@ -41,6 +44,10 @@
         
         @media (min-width: 900px) {
             .cards{ grid-template-columns: repeat(3, 1fr); }
+        }
+
+        @media (min-width: 1200px) {
+            .cards{ grid-template-columns: repeat(4, 1fr); }
         }
 
 
