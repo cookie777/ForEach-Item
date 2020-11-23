@@ -129,3 +129,31 @@ header ul li {
   gap: 0;
   justify-content: space-around;
 }
+
+.descriptions {
+  display: flex;
+}
+.descriptions .sentence {
+  width: 40%;
+}
+.descriptions .picture {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.repository {
+  text-align: center;
+}
+
+.forEach-item {
+  max-width: 858px;
+  margin: 0 auto;
+}
+.forEach-item .scene {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
