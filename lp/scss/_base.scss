@@ -1,13 +1,16 @@
 @import "variables";
 
 // helper boarder that let you easier to understand each block
-* { 
-    outline: 2px solid rgba(218, 65, 65, 0.426);
-    outline-offset: -1px;
-  }
+// * { 
+//     outline: 2px solid rgba(218, 65, 65, 0.426);
+//     outline-offset: -1px;
+//   }
 
 html{
-    font-size: 16px;
+    font-size: 12.5px;
+    @media(min-width: 600px) {
+        font-size: 16px;
+    }
 }
 
 body {
@@ -15,8 +18,13 @@ body {
     font-family: 'Rubik', sans-serif;
     font-size: 30px;
     color: $secondary-color;
-    max-width: 1034px;
+    max-width: 1096px;
+    min-width: 320px;
     margin: 0 auto;
+}
+
+.wrapper{
+    margin: 2rem 2rem 0 2rem;
 }
 
 // reset a tag
@@ -28,6 +36,9 @@ a{
     &:visited{
         color: $secondary-color;
     }
+    &:hover{
+        color: $accent-color;
+    }
 }
 
 img {
@@ -37,8 +48,11 @@ img {
 // basic font setting
 h1 {
     font-weight: 900;
-    font-size: 4.5rem;
+    font-size: 3rem;
     line-height: 117.5%;
+    @media(min-width: 900px){
+        font-size: 4.5rem;
+    }
 }
 
 h2 {

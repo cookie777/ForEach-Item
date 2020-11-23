@@ -1,5 +1,6 @@
 header{
-    display: flex;
+    display: flex;        
+    flex-direction: column;
     justify-content: space-between;
     img{
         max-width: 11rem;//176px
@@ -7,10 +8,19 @@ header{
 
     ul {
         display: flex;
-        li {
-            padding-left: 4rem;
+        justify-content: space-between;
+        margin: 2rem 2rem 0 0;
+        &:last-child{
+            margin-right: 0;
         }
     }
-    margin-top: 2rem;
     margin-bottom: 6rem;
+
+    @media(min-width: 700px){
+        flex-direction: row;
+        ul{margin: 0;}
+        li {
+            margin-left: 4rem;
+        }
+    }
 }
