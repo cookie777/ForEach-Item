@@ -7,7 +7,10 @@
   }
 
 html{
-    font-size: 16px;
+    font-size: 12px;
+    @media(min-width: 600px) {
+        font-size: 16px;
+    }
 }
 
 body {
@@ -16,6 +19,7 @@ body {
     font-size: 30px;
     color: $secondary-color;
     max-width: 1034px;
+    min-width: 400px;
     margin: 0 auto;
 }
 
@@ -27,6 +31,9 @@ a{
     }
     &:visited{
         color: $secondary-color;
+    }
+    &:hover{
+        color: $accent-color;
     }
 }
 

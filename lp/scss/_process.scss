@@ -1,8 +1,4 @@
 @import "variables";
-// $main-color: #ffffff;
-
-// $accent-color: #5bbe0d;
-
 .process{
     .secondary-headline{
         color: $main-color;
@@ -18,15 +14,61 @@
     }
     
     .tools{
-        .tool-cards{
+        .cards{
             display: grid;
-            grid-template-columns: repeat(3,1fr);
-            grid-template-rows: repeat(10, auto);
-            gap: 0;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(auto, auto);
             justify-content: space-around;
-            // .card{
-            //     width: 300px;
-            // }
+
+            //to draw lines only in grid, use grid gap as boarder
+            gap: 1.5px; 
+            background-color:rgba($color: $secondary-color, $alpha: 0.3);
+
+            .card{
+                background-color: $main-color;
+                img{
+                    display: block; //->will be treated as block == margin auto is valid
+                    margin: 0 auto;
+                    width: 70%;
+                }
+            }
+        }
+
+        // when you write responsive, it must be smaller to larger
+        @media (min-width: 600px) {
+            .cards{ grid-template-columns: repeat(2, 1fr); }
+        }
+        
+        @media (min-width: 900px) {
+            .cards{ grid-template-columns: repeat(3, 1fr); }
+        }
+
+
+    }
+
+
+    .members{
+        .cards{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(auto, auto);
+            gap: 2.5rem;
+            .card{
+                display: flex;
+                img{
+                    min-width: 5rem;
+                    margin-right: 2.5rem;
+                }
+            }
+
+            @media (min-width: 900px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
         }
     }
+
+
 }
+
+
