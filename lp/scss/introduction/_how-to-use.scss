@@ -1,0 +1,33 @@
+.how-to-use{
+
+    max-width: 858px;
+    margin: 0 auto;
+    .scene1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 4rem;
+        background-color: royalblue;
+
+        .picture1{
+            width: 30%;
+            height: 25px;
+            background-color: red;
+        }
+        .picture2{
+            width: 30%;
+            height: 25px;
+        }
+        .picture3{
+            width: 30%;
+            height: 25px;
+        }
+
+
+
+        
+    }
+   
+
+    
+}
