@@ -1,4 +1,13 @@
 @import "base";
+
 @import "header";
-@import "introduction";
-@import "process";
+
+@import "introduction/user-story";
+@import "introduction/product";
+@import "introduction/how-to-use";
+
+@import "process/secondary-title";
+@import "process/tools";
+@import "process/descriptions";
+@import "process/members";
+@import "process/repository";

@@ -1,0 +1,13 @@
+.descriptions{
+    display: flex;
+    .sentence{
+        width: 40%;
+    }
+    .picture{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
