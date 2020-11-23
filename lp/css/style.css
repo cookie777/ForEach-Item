@@ -157,3 +157,28 @@ header ul li {
   justify-content: space-between;
   margin-bottom: 4rem;
 }
+
+.howToUse {
+  max-width: 858px;
+  margin: 0 auto;
+}
+.howToUse .scene1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  background-color: royalblue;
+}
+.howToUse .scene1 .picture1 {
+  width: 30%;
+  height: 25px;
+  background-color: red;
+}
+.howToUse .scene1 .picture2 {
+  width: 30%;
+  height: 25px;
+}
+.howToUse .scene1 .picture3 {
+  width: 30%;
+  height: 25px;
+}
