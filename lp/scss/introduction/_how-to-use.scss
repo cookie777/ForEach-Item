@@ -3,13 +3,16 @@
     .cards{
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        flex-wrap: wrap;
 
         .card{
-            margin-right: 1.5rem;
-            &:last-child{
-                margin-right: 0;
-            }
+            margin-bottom: 2rem;
+            // margin-right: 0.74rem;
+            // margin-left: 0.74rem;
+            // &:last-child{
+            //     margin-right: 0;
+            // }
         }
 
 
