@@ -2,7 +2,7 @@
 
 .hero{
     background-image: url("../img/hero-background.png");
-    background-size: 25rem auto;
+    background-size: 22rem auto;
     background-repeat: no-repeat;
     background-position: 100% 100%;
     min-height: 27rem;
@@ -13,6 +13,7 @@
     }
 
     @media(min-width:900px){
+        margin-bottom: 4rem; //Usually 6rem but I put 4rem to appear the below section. 
         background-size: 30rem auto;
         p{width: 100%;}
     }

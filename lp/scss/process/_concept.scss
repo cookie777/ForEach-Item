@@ -2,29 +2,36 @@
 
 .concept{
     .content{
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: repeat(1fr, 2);
-        column-gap: 1.5rem;
-        .catch-copy1{
-            margin: auto 0;
+
+        display: flex;
+        flex-direction: column;
+        .catch-copy{
+            width: 15rem;
             color: $accent-color;
-            font-weight: bold;
-            font-size: 3.5rem;
-        }
-        .catch-copy2{
-            margin: auto 0;
-            color: $accent-color;
-            font-weight:900;
-            font-size: 1.5rem;
-            // div{
-            //     &:first-child{margin-bottom: 0.25rem;}
-                
-            // }
+            display: flex;
+            gap: 2rem;
+            margin: 0 2rem 1.5rem 0;
+            .first{
+                margin: auto 0;
+                font-weight: bold;
+                font-size: 3.5rem;
+            }
+            .second{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 0.25rem;
+    
+                font-weight:900;
+                font-size: 1.5rem;
+            }
         }
 
         @media (min-width: 600px) {
-            grid-template-columns: 4rem 8rem auto;
+            flex-direction: row;
+            .catch-copy{
+                margin-bottom: 0em;
+            }
         }
     }
 }

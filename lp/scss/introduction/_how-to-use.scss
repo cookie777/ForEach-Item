@@ -1,26 +1,17 @@
 .how-to-use{
 
     .cards{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 1.5rem;
 
-        .card{
-            margin-bottom: 2rem;
-            // margin-right: 0.74rem;
-            // margin-left: 0.74rem;
-            // &:last-child{
-            //     margin-right: 0;
-            // }
+
+        @media (min-width:600px) {
+            grid-template-columns: repeat(3,1fr);
+            h3{
+                font-weight: 300;
+            }
         }
-
-
-
-
-
-
-        
     }
    
 

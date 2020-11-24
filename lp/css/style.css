@@ -1,5 +1,6 @@
 html {
   font-size: 12.5px;
+  scroll-behavior: smooth;
 }
 @media (min-width: 600px) {
   html {
@@ -72,6 +73,10 @@ section {
   margin-bottom: 6rem;
 }
 
+article {
+  margin-bottom: 6rem;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -103,7 +108,7 @@ header ul:last-child {
 
 .hero {
   background-image: url("../img/hero-background.png");
-  background-size: 25rem auto;
+  background-size: 22rem auto;
   background-repeat: no-repeat;
   background-position: 100% 100%;
   min-height: 27rem;
@@ -117,6 +122,7 @@ header ul:last-child {
 }
 @media (min-width: 900px) {
   .hero {
+    margin-bottom: 4rem;
     background-size: 30rem auto;
   }
   .hero p {
@@ -166,20 +172,28 @@ header ul:last-child {
   z-index: -1;
 }
 
-.product .scene {
+.product .content {
   display: flex;
+  gap: 2.5rem;
   justify-content: space-between;
   margin-bottom: 4rem;
 }
+.product .content .description {
+  margin: auto 0;
+}
 
 .how-to-use .cards {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
 }
-.how-to-use .cards .card {
-  margin-bottom: 2rem;
+@media (min-width: 600px) {
+  .how-to-use .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .how-to-use .cards h3 {
+    font-weight: 300;
+  }
 }
 
 .secondary-title {
@@ -200,26 +214,35 @@ header ul:last-child {
 }
 
 .concept .content {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: repeat(1fr, 2);
-  column-gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
-.concept .content .catch-copy1 {
-  margin: auto 0;
+.concept .content .catch-copy {
+  width: 15rem;
   color: #5bbe0d;
+  display: flex;
+  gap: 2rem;
+  margin: 0 2rem 1.5rem 0;
+}
+.concept .content .catch-copy .first {
+  margin: auto 0;
   font-weight: bold;
   font-size: 3.5rem;
 }
-.concept .content .catch-copy2 {
-  margin: auto 0;
-  color: #5bbe0d;
+.concept .content .catch-copy .second {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.25rem;
   font-weight: 900;
   font-size: 1.5rem;
 }
 @media (min-width: 600px) {
   .concept .content {
-    grid-template-columns: 4rem 8rem auto;
+    flex-direction: row;
+  }
+  .concept .content .catch-copy {
+    margin-bottom: 0em;
   }
 }
 
@@ -237,7 +260,7 @@ header ul:last-child {
 .tools .cards .card img {
   display: block;
   margin: 0 auto;
-  width: 70%;
+  max-width: 50%;
 }
 @media (min-width: 600px) {
   .tools .cards {
@@ -249,23 +272,12 @@ header ul:last-child {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media (min-width: 1200px) {
-  .tools .cards {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
 
-.descriptions {
-  display: flex;
-}
-.descriptions .sentence {
-  width: 40%;
-}
-.descriptions .picture {
-  width: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.descriptions .paragraph {
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 2.5rem;
 }
 
 .members .cards {
@@ -279,6 +291,7 @@ header ul:last-child {
   word-break: break-all;
 }
 .members .cards .card img {
+  max-width: 7rem;
   min-width: 5rem;
   margin-right: 2.5rem;
 }
