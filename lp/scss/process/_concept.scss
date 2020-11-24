@@ -4,7 +4,7 @@
     .content{
         display: grid;
         grid-template-columns: 1fr 2fr;
-        grid-template-rows: repeat(auto, auto);
+        grid-template-rows: repeat(1fr, 2);
         column-gap: 1.5rem;
         .catch-copy1{
             margin: auto 0;
