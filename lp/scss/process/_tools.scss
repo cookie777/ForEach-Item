@@ -17,7 +17,7 @@
             img{
                 display: block; //->will be treated as block == margin auto is valid
                 margin: 0 auto;
-                width: 70%;
+                max-width: 50%;
             }
         }
     }
@@ -31,9 +31,9 @@
         .cards{ grid-template-columns: repeat(3, 1fr); }
     }
 
-    @media (min-width: 1200px) {
-        .cards{ grid-template-columns: repeat(4, 1fr); }
-    }
+    // @media (min-width: 1200px) {
+    //     .cards{ grid-template-columns: repeat(4, 1fr); }
+    // }
 
 
 }
