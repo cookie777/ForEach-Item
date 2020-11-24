@@ -1,0 +1,15 @@
+@import "variables";
+
+.hero{
+    background-image: url("../img/hero-background.png");
+    background-size: 480px auto;
+    // object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    min-height: 27rem;
+    .title{
+        color: $accent-color;
+        margin-bottom: 2rem;
+    }
+
+}
