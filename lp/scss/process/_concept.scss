@@ -1,0 +1,30 @@
+@import "variables";
+
+.concept{
+    .content{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: repeat(auto, auto);
+        column-gap: 1.5rem;
+        .catch-copy1{
+            margin: auto 0;
+            color: $accent-color;
+            font-weight: bold;
+            font-size: 3.5rem;
+        }
+        .catch-copy2{
+            margin: auto 0;
+            color: $accent-color;
+            font-weight:900;
+            font-size: 1.5rem;
+            // div{
+            //     &:first-child{margin-bottom: 0.25rem;}
+                
+            // }
+        }
+
+        @media (min-width: 600px) {
+            grid-template-columns: 4rem 8rem auto;
+        }
+    }
+}

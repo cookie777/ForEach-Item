@@ -1,3 +1,8 @@
+* {
+  outline: 2px solid rgba(218, 65, 65, 0.426);
+  outline-offset: -1px;
+}
+
 html {
   font-size: 12.5px;
 }
@@ -197,6 +202,30 @@ header ul:last-child {
 @media (min-width: 1032px) {
   .secondary-title .title {
     padding: 2rem 0;
+  }
+}
+
+.concept .content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(auto, auto);
+  column-gap: 1.5rem;
+}
+.concept .content .catch-copy1 {
+  margin: auto 0;
+  color: #5bbe0d;
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+.concept .content .catch-copy2 {
+  margin: auto 0;
+  color: #5bbe0d;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+@media (min-width: 600px) {
+  .concept .content {
+    grid-template-columns: 4rem 8rem auto;
   }
 }
 
