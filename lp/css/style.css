@@ -106,10 +106,18 @@ header ul:last-child {
   }
 }
 
-.user-story {
-  max-width: 858px;
-  margin: 0 auto;
+.hero {
+  background-image: url("../img/hero-background.png");
+  background-size: 480px auto;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  min-height: 27rem;
 }
+.hero .title {
+  color: #5bbe0d;
+  margin-bottom: 2rem;
+}
+
 .user-story .scene {
   display: flex;
   flex-direction: column;
@@ -152,40 +160,22 @@ header ul:last-child {
   z-index: -1;
 }
 
-.product {
-  max-width: 858px;
-  margin: 0 auto;
-}
 .product .scene {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   margin-bottom: 4rem;
 }
 
-.how-to-use {
-  max-width: 858px;
-  margin: 0 auto;
-}
-.how-to-use .scene1 {
+.how-to-use .cards {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 4rem;
-  background-color: royalblue;
 }
-.how-to-use .scene1 .picture1 {
-  width: 30%;
-  height: 25px;
-  background-color: red;
+.how-to-use .cards .card {
+  margin-right: 1.5rem;
 }
-.how-to-use .scene1 .picture2 {
-  width: 30%;
-  height: 25px;
-}
-.how-to-use .scene1 .picture3 {
-  width: 30%;
-  height: 25px;
+.how-to-use .cards .card:last-child {
+  margin-right: 0;
 }
 
 .secondary-title {
