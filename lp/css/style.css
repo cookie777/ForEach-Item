@@ -1,3 +1,8 @@
+* {
+  outline: 2px solid rgba(218, 65, 65, 0.426);
+  outline-offset: -1px;
+}
+
 html {
   font-size: 12.5px;
 }
@@ -168,8 +173,23 @@ header ul:last-child {
 
 .product .scene {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin-bottom: 4rem;
+}
+.product .scene p {
+  margin-bottom: 2rem;
+}
+.product .scene img {
+  margin: 0 auto;
+  max-width: 37rem;
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 900px) {
+  .product .scene {
+    flex-direction: row;
+  }
 }
 
 .how-to-use .cards {
