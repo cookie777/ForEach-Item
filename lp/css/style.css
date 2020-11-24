@@ -184,11 +184,16 @@ header ul:last-child {
 
 .how-to-use .cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 1.5rem;
 }
-.how-to-use .cards h3 {
-  font-weight: 300;
+@media (min-width: 600px) {
+  .how-to-use .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .how-to-use .cards h3 {
+    font-weight: 300;
+  }
 }
 
 .secondary-title {
