@@ -195,6 +195,30 @@ header ul:last-child {
   }
 }
 
+.concept .content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(auto, auto);
+  column-gap: 1.5rem;
+}
+.concept .content .catch-copy1 {
+  margin: auto 0;
+  color: #5bbe0d;
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+.concept .content .catch-copy2 {
+  margin: auto 0;
+  color: #5bbe0d;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+@media (min-width: 600px) {
+  .concept .content {
+    grid-template-columns: 4rem 8rem auto;
+  }
+}
+
 .tools .cards {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
