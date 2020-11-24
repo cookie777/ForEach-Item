@@ -177,9 +177,16 @@ header ul:last-child {
   gap: 2.5rem;
   justify-content: space-between;
   margin-bottom: 4rem;
+  flex-direction: column;
+  align-items: center;
 }
 .product .content .description {
   margin: auto 0;
+}
+@media (min-width: 900px) {
+  .product .content {
+    flex-direction: row;
+  }
 }
 
 .how-to-use .cards {
