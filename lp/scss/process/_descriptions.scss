@@ -1,13 +1,10 @@
 .descriptions{
-    display: flex;
-    .sentence{
-        width: 40%;
-    }
-    .picture{
-        width: 60%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+    .paragraph{
+        margin-bottom: 2rem;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        gap: 2.5rem;  
     }
     
 }

@@ -1,8 +1,12 @@
 .product{
 
-    .scene{
+    .content{
         display: flex;
+        gap: 2.5rem;
         justify-content: space-between;
         margin-bottom: 4rem;
+        .description{
+            margin: auto 0;
+        }
     }
 }

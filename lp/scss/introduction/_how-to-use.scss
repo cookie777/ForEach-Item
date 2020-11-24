@@ -1,26 +1,21 @@
 .how-to-use{
 
     .cards{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-
-        .card{
-            margin-bottom: 2rem;
-            // margin-right: 0.74rem;
-            // margin-left: 0.74rem;
-            // &:last-child{
-            //     margin-right: 0;
-            // }
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // flex-wrap: wrap;
+        // gap: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1.5rem;
+        h3{
+            font-weight: 300;
         }
-
-
-
-
-
-
-        
+        // img{
+        //     width: 100%;
+        //     object-fit: cover;
+        // }
     }
    
 

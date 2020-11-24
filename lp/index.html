@@ -12,7 +12,7 @@
 <body>
 <div class="wrapper">
 
-   
+
     <!-- header == logo + menu -->
     <header>
         <div class="logo">
@@ -22,9 +22,9 @@
         <div class="menu">
             <nav>
                 <ul>
-                    <li><a href="#"><h3>About app</h3></a></li>
-                    <li><a href="#"><h3>Process</h3></a></li>
-                    <li><a href="#"><h3>Contact</h3></a></li>
+                    <li><a href="#app"><h3>About app</h3></a></li>
+                    <li><a href="#process"><h3>Process</h3></a></li>
+                    <li><a href="#contact"><h3>Contact</h3></a></li>
                 </ul>
             </nav>
         </div>
@@ -35,7 +35,7 @@
     <main class="main">
         <!-- first page == "No more Unit trouble in  Supermarkets" -->
         
-        <section class="introduction">
+        <section id="app" class="introduction">
             <section class="hero">
                 <h1 class="title">No more <br>Unit trouble in<br>Supermarkets</h1>
                 <p>With our app, you will no longer feel frustrated about<br>“lb” during your grocery shopping.</p>
@@ -69,10 +69,10 @@
 
 
         <section class="product">
-            <div class="scene">
+            <div class="content">
                 <div class="description">
-                    <h2>product</h2>
-                    <p>A lot of people want to know the price per unit easily and quickly.<br>So we created the best application which is called “For each item”<br>This application can caluculate the price per unit of products. </p>                        
+                    <h2>Product</h2>
+                    <p>A lot of people want to know the price per unit easily and quickly. So we created the best application which is called “For each item.” This application can calculate the price per unit of products. </p>                        
                 </div>
                 <img src="./img/product.png" alt="product">
             </div>
@@ -84,22 +84,22 @@
                 
                 <div class="card">
                         <h3>1. Select the product </h3>
-                        <img src="./img/how-to-placeholder.png" alt="">
+                        <img src="./img/how-to-selection.png" alt="">
                 </div>
                 <div class="card">
                         <h3>2. Put the price and size </h3>
-                        <img src="./img/how-to-placeholder.png" alt="">
+                        <img src="./img/how-to-input.png" alt="">
                 </div>
                 <div class="card">
-                        <h3>3. Press calculae button </h3>
-                        <img src="./img/how-to-placeholder.png" alt="">
+                        <h3>3. Press calculate button </h3>
+                        <img src="./img/how-to-calculation.png" alt="">
                 </div>
 
             </div>
         </section>
 
         <!-- second page == "more about the application"-->
-        <section class="process">
+        <section id="process" class="process">
             <section class="secondary-title">
                 <div class="title">
                     <h1>More about <br>our application</h1>
@@ -108,12 +108,14 @@
             <section class="concept">
                 <h2>Fast Production</h2>
                 <div class="content">
-                    <div class="catch-copy1">
-                        3
-                    </div>
-                    <div class="catch-copy2">
-                        <div>people</div>
-                        <div>days</div>
+                    <div class="catch-copy">
+                        <div class="first">
+                            3
+                        </div>
+                        <div class="second">
+                            <div>people</div>
+                            <div>days</div>
+                        </div>
                     </div>
                     <div class="description">
                         <p>The project was completed by 3 people in only 3 days. In order to make it happen, we used serval tools and design.</p>
@@ -142,75 +144,91 @@
                     <div class="card">
                         <img src="./img/card-slack.png" alt="">
                     </div>  
-                    <div class="card">
-                    </div>  
-                    <div class="card">
-                    </div>  
                 </div>
             </section>
-            <section class="descriptions">
-                <div class="sentence">
+
+            <article class="descriptions">
+                <div class="title">
                     <h2>Coding</h2>
-                    <h3>KISS + MVC </h3>
-                    <p>We used two principles that help us create the app. They are MVC (Model, View, Controller) and KISS (Keep It Simple Stupid) principles. These methods helped our understanding of the app's production much easier, faster, and cleaner.  MVC model helped us planning and realizing our app. This was because this design pattern gave us an outline that how our ideas should be organized into actual code. Besides, MVC makes other developers easier to understand our code.<br><br>KISS principle helped us keep our code as simple as possible. Whenever we have complex codes, we always try to break them into smaller maintainable codes. Therefore, we are able to implement a quick cod</p>
+                    <h3>KISS & MVC </h3>
                 </div>
-                <div class="picture">
+                <div class="paragraph">
+                    <div class="sentence">
+                        <p>We used two principles that help us create the app. They are MVC (Model, View, Controller) and KISS (Keep It Simple Stupid) principles. These methods helped our understanding of the app's production much easier, faster, and cleaner.  MVC model helped us planning and realizing our app. This was because this design pattern gave us an outline that how our ideas should be organized into actual code. Besides, MVC makes other developers easier to understand our code.</p>
+                    </div>
                     <img src="./img/description-mvc.png" alt="">
                 </div>
-            </section>
-            <section class="descriptions">
-                <div class="sentence">
+                <div class="paragraph">
+                    <div class="sentence">
+                        <p>KISS principle helped us keep our code as simple as possible. Whenever we have complex codes, we always try to break them into smaller maintainable codes. Therefore, we are able to implement a quick cod</p>
+                    </div>
+                    <img src="./img/description-kiss.png" alt="">
+                </div>
+            </article>
+
+            <article class="descriptions">
+                <div class="title">
                     <h2>Scheduling</h2>
-                    <h3>Agile + Close communication</h3>
-                    <p>As for our communication tools, we used Slack and Notion. We mainly communicate through Slack. We also shared documents and mock-up files using google drive and Slack to make our product efficiently. <br><br>In terms of the meetings, we had group meetings every day throughout the week. We were able to have meetings regardless of time and location by using the google Meet service.<br><br>We created the to-do lists every day by using the Notion. Especially, we used the new timeline feature in Notion, which always allowed us to keep track of our progress and relevant conversations.</p>
+                    <h3>Agile & Close communication</h3>
                 </div>
-                <div class="picture">
-                    <img src="./img/description-notion.png" alt="">
+                <div class="paragraph">
+                    <div class="sentence">
+                        <p>As for our communication tools, we used Slack and Notion. We mainly communicate through Slack. We also shared documents and mock-up files using google drive and Slack to make our product efficiently. 
+                            <br>
+                            In terms of the meetings, we had group meetings every day throughout the week. We were able to have meetings regardless of time and location by using the google Meet service.</p>
+                    </div>
+                    <img src="./img/description-schedule.png" alt="">
                 </div>
-            </section>
-            <section class="member"></article>
-           
-            <section class="members">
+                <div class="paragraph">
+                    <div class="sentence">
+                        <p>We created the to-do lists every day by using the Notion. Especially, we used the new timeline feature in Notion, which always allowed us to keep track of our progress and relevant conversations.</p>
+                    </div>
+                    <img src="./img/description-meeting.png" alt="">
+                </div>
+            </article>
+
+
+            <section id="contact" class="members">
                 <h2>Members</h2>
                 <div class="cards">
                     <div class="card">
                         <div class="icon">
-                            <img src="./img/icon-profile-placeholder.png" alt="">
+                            <img src="./img/icon-profile-takayuki.png" alt="">
                         </div>
                         <div class="profile">
                             <h3>Takayuki Yamaguchi</h3>
                             <p>PM, front end, back end, designer</p>
                             <p>
                                 <a href="https://github.com/cookie777/">
-                                    https://github.com/cookie777/
+                                    github.com/cookie777/
                                 </a>
                             </p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="icon">
-                            <img src="./img/icon-profile-placeholder.png" alt="">
+                            <img src="./img/icon-profile-danilo.png" alt="">
                         </div>
                         <div class="profile">
                             <h3>Danilo Mello</h3>
                             <p>Back end</p>
                             <p>
                                 <a href="https://github.com/danilo-mello/">
-                                    https://github.com/danilo-mello/
+                                    github.com/danilo-mello/
                                 </a>
                             </p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="icon">
-                            <img src="./img/icon-profile-placeholder.png" alt="">
+                            <img src="./img/icon-profile-shinichiro.png" alt="">
                         </div>
                         <div class="profile">
                             <h3>Shintaro Okamoto </h3>
                             <p>Front end</p>
                             <p>
                                 <a href="https://github.com/Sh11ntar0/">
-                                    https://github.com/Sh11ntar0/
+                                    github.com/Sh11ntar0/
                                 </a>
                             </p>
 
@@ -218,14 +236,14 @@
                     </div>
                     <div class="card">
                         <div class="icon">
-                            <img src="./img/icon-profile-placeholder.png" alt="">
+                            <img src="./img/icon-profile-takayasu.png" alt="">
                         </div>
                         <div class="profile">
                             <h3>Takayasu Nasu</h3>
                             <p>Technical adviser</p>
                             <p>
                                 <a href="https://github.com/TakayasuNasu">
-                                    https://github.com/TakayasuNasu/
+                                    github.com/TakayasuNasu/
                                 </a>
                             </p>
                         </div>
@@ -236,7 +254,9 @@
         </section>
         <section class="repository">
             <h2>Git hub Repository</h2>
-            <p>https://github.com/cookie777/product</p>
+            <p>
+                <a href="https://github.com/cookie777/product">github.com/cookie777/product</a>
+            </p>
         </section>
 
     </main>
