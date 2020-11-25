@@ -2,6 +2,10 @@ header{
     display: flex;        
     flex-direction: column;
     justify-content: space-between;
+    h3{
+        font-size: 1rem;
+    }
+
     img{
         max-width: 11rem;//176px
     }
@@ -16,7 +20,11 @@ header{
     }
     margin-bottom: 6rem;
 
-    @media(min-width: 700px){
+    @media(min-width: 600px){
+        h3{
+            font-size: 1.5rem;
+        }
+
         flex-direction: row;
         ul{margin: 0;}
         li {
