@@ -9,7 +9,7 @@ const title3 = ["When you buy some fruits or vegetables,","do you use a scale?"]
 
 const data1 = [1,6,1,2];
 const data2 = [4,5,0,1];
-const data3 = [6,1,2,0];
+const data3 = [0,2,1,6];
 
 const label1 = [
                     "Yes, a lot !",
