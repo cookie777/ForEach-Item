@@ -1,10 +1,10 @@
 @import "variables";
 
-// helper boarder that let you easier to understand each block
+
 * { 
     outline: 2px solid rgba(218, 65, 65, 0.426);
     outline-offset: -1px;
-  }
+}
 
 html{
     font-size: 12.5px;

@@ -179,10 +179,18 @@ header ul:last-child {
 
 .product .content {
   display: grid;
+  gap: 2.5rem;
+  margin-bottom: 4rem;
   grid-template-columns: 1fr;
-  gap: 1.5rem;
 }
-@media (min-width: 600px) {
+.product .content .description {
+  margin: auto 0;
+}
+.product .content img {
+  margin: 0 auto;
+  display: block;
+}
+@media (min-width: 900px) {
   .product .content {
     grid-template-columns: 5fr 7fr;
   }
@@ -295,8 +303,17 @@ header ul:last-child {
 .descriptions .paragraph {
   margin-bottom: 2rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 2.5rem;
+}
+.descriptions .paragraph img {
+  display: block;
+  margin: 0 auto;
+}
+@media (min-width: 600px) {
+  .descriptions .paragraph {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .members .cards {
