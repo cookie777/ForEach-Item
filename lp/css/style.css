@@ -1,3 +1,8 @@
+* {
+  outline: 2px solid rgba(218, 65, 65, 0.426);
+  outline-offset: -1px;
+}
+
 html {
   font-size: 12.5px;
   scroll-behavior: smooth;
@@ -173,19 +178,13 @@ header ul:last-child {
 }
 
 .product .content {
-  display: flex;
-  gap: 2.5rem;
-  justify-content: space-between;
-  margin-bottom: 4rem;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
 }
-.product .content .description {
-  margin: auto 0;
-}
-@media (min-width: 900px) {
+@media (min-width: 600px) {
   .product .content {
-    flex-direction: row;
+    grid-template-columns: 5fr 7fr;
   }
 }
 
@@ -203,40 +202,23 @@ header ul:last-child {
   }
 }
 
-.secondary-title {
-  color: #ffffff;
-  background-color: #3b3f38;
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
+.secondary-hero .concept {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: column;
 }
-.secondary-title .title {
-  max-width: 1032px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-@media (min-width: 1032px) {
-  .secondary-title .title {
-    padding: 2rem 0;
-  }
-}
-
-.concept .content {
-  display: flex;
-  flex-direction: column;
-}
-.concept .content .catch-copy {
-  width: 15rem;
+.secondary-hero .concept .catch-copy {
+  min-width: 15rem;
   color: #5bbe0d;
   display: flex;
   gap: 2rem;
-  margin: 0 2rem 1.5rem 0;
 }
-.concept .content .catch-copy .first {
+.secondary-hero .concept .catch-copy .first {
   margin: auto 0;
   font-weight: bold;
   font-size: 3.5rem;
 }
-.concept .content .catch-copy .second {
+.secondary-hero .concept .catch-copy .second {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -245,10 +227,10 @@ header ul:last-child {
   font-size: 1.5rem;
 }
 @media (min-width: 600px) {
-  .concept .content {
-    flex-direction: row;
+  .secondary-hero .concept {
+    grid-template-columns: 3fr 4fr 5fr;
   }
-  .concept .content .catch-copy {
+  .secondary-hero .concept .catch-copy {
     margin-bottom: 0em;
   }
 }
@@ -283,7 +265,7 @@ header ul:last-child {
 .descriptions .paragraph {
   margin-bottom: 2rem;
   display: grid;
-  grid-template-columns: 2fr 2fr;
+  grid-template-columns: 1fr 1fr;
   gap: 2.5rem;
 }
 

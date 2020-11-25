@@ -1,37 +1,37 @@
-@import "variables";
+// @import "variables";
 
-.concept{
-    .content{
+// .concept{
+//     .content{
 
-        display: flex;
-        flex-direction: column;
-        .catch-copy{
-            width: 15rem;
-            color: $accent-color;
-            display: flex;
-            gap: 2rem;
-            margin: 0 2rem 1.5rem 0;
-            .first{
-                margin: auto 0;
-                font-weight: bold;
-                font-size: 3.5rem;
-            }
-            .second{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                gap: 0.25rem;
+//         display: flex;
+//         flex-direction: column;
+//         .catch-copy{
+//             width: 15rem;
+//             color: $accent-color;
+//             display: flex;
+//             gap: 2rem;
+//             margin: 0 2rem 1.5rem 0;
+//             .first{
+//                 margin: auto 0;
+//                 font-weight: bold;
+//                 font-size: 3.5rem;
+//             }
+//             .second{
+//                 display: flex;
+//                 flex-direction: column;
+//                 justify-content: center;
+//                 gap: 0.25rem;
     
-                font-weight:900;
-                font-size: 1.5rem;
-            }
-        }
+//                 font-weight:900;
+//                 font-size: 1.5rem;
+//             }
+//         }
 
-        @media (min-width: 600px) {
-            flex-direction: row;
-            .catch-copy{
-                margin-bottom: 0em;
-            }
-        }
-    }
-}
+//         @media (min-width: 600px) {
+//             flex-direction: row;
+//             .catch-copy{
+//                 margin-bottom: 0em;
+//             }
+//         }
+//     }
+// }
