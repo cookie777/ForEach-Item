@@ -193,7 +193,6 @@ header ul:last-child {
 @media (min-width: 900px) {
   .product .content {
     grid-template-columns: 5fr 7fr;
-    background-color: #250f50;
   }
 }
 
@@ -274,8 +273,17 @@ header ul:last-child {
 .descriptions .paragraph {
   margin-bottom: 2rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 2.5rem;
+}
+.descriptions .paragraph img {
+  display: block;
+  margin: 0 auto;
+}
+@media (min-width: 600px) {
+  .descriptions .paragraph {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .members .cards {
