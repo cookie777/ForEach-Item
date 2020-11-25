@@ -24,6 +24,9 @@ header{
         h3{
             font-size: 1.5rem;
         }
+    }
+
+    @media(min-width: 900px){
 
         flex-direction: row;
         ul{margin: 0;}

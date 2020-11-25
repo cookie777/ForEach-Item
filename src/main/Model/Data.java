@@ -29,20 +29,20 @@ public class Data {
     static final String ITEM_NAME_3 = "Orange";
     static final String ITEM_NAME_4 = "Potato";
     static final String ITEM_NAME_5 = "Tomato";
-    static final Integer WEIGHT_ITEM_1_S = 118;
-    static final Integer WEIGHT_ITEM_1_M = 129;
-    static final Integer WEIGHT_ITEM_1_L = 140;
-    static final Integer WEIGHT_ITEM_2_S = 70;
-    static final Integer WEIGHT_ITEM_2_M = 85;
-    static final Integer WEIGHT_ITEM_2_L = 100;
+    static final Integer WEIGHT_ITEM_1_S = 118*6;
+    static final Integer WEIGHT_ITEM_1_M = 129*6;
+    static final Integer WEIGHT_ITEM_1_L = 140*6;
+    static final Integer WEIGHT_ITEM_2_S = 157;
+    static final Integer WEIGHT_ITEM_2_M = 172;
+    static final Integer WEIGHT_ITEM_2_L = 200;
     static final Integer WEIGHT_ITEM_3_S = 96;
     static final Integer WEIGHT_ITEM_3_M = 131;
     static final Integer WEIGHT_ITEM_3_L = 184;
     static final Integer WEIGHT_ITEM_4_S = 96;
     static final Integer WEIGHT_ITEM_4_M = 174;
     static final Integer WEIGHT_ITEM_4_L = 286;
-    static final Integer WEIGHT_ITEM_5_S = 55;
-    static final Integer WEIGHT_ITEM_5_M = 83;
-    static final Integer WEIGHT_ITEM_5_L = 142;
+    static final Integer WEIGHT_ITEM_5_S = 91;
+    static final Integer WEIGHT_ITEM_5_M = 123;
+    static final Integer WEIGHT_ITEM_5_L = 182;
 
 }

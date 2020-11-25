@@ -2,22 +2,37 @@
 .members{
     .cards{
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(auto, auto);
+        grid-template-columns: 1fr;
         gap: 2.5rem;
         .card{
-            display: flex;
-                word-break: break-all;
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            word-break: break-all;
+            .profile{
+                margin-left: 1.5rem;
+            }
             img{
-                max-width: 7rem;
-                min-width: 5rem;
-                margin-right: 2.5rem;
+                display: block;
+                margin: auto 0;
+                max-width: 5rem;
             }
         }
 
-        @media (min-width: 900px) {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
     }
+}
+
+@media (min-width: 600px) {
+    .members{
+        .cards{
+            grid-template-columns: repeat(2, 1fr);
+            .card{
+                img{
+                    max-width: 6rem;
+
+                }
+            }
+        }
+    }
+    
+
 }

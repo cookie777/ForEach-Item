@@ -10,6 +10,10 @@
             width: 60%;
         }
 
+        p{
+            text-align: center;
+        }
+
         .card{
             display: flex;
             flex-flow: column;
@@ -21,12 +25,9 @@
             img{
                 width: 100%;
             }
-            h3{
-                font-weight: 300;
-            }
         }
     }
-   
+
 
     
 }
