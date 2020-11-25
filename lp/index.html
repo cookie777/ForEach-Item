@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="./css/style.css"></link>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -64,6 +65,55 @@
                     </div>
                 </div>
             </section>
+            <section class="survey">
+                <h2>Survey</h2>
+                <div class="sentence">
+                    <p>We conducted a survey to collect user's’ opinions. By asking several questions about supermarket unit and how  how they think about “lb” unit, we were able to understand their desire.</p>
+                </div>
+                <div class="charts">
+                
+                    <div class="chart">
+                        
+                        <div>
+                            <div> <canvas id="chart1" height="400" ></canvas></div>
+                            <div class="title">
+                                Q: Have you ever felt any frustration, about the "lb" unit, when you are buying something?
+                            </div>
+                        </div>
+                        <div>
+                            <p>Around 70% of the users experienced frustration or problem when they face to “lb” unit in the supermarket.</p>
+                        </div>
+                    </div>
+                    <div class="chart">
+                        <div>
+                            <div><canvas id="chart2" height="400"></canvas></div>
+                            <div class="title">
+                                Q: Do you want to know how much it costs, if you buy one piece of food? For example, a price for one piece of apple.
+                            </div>
+                        </div>
+
+                        <div>
+                            <p>90% of the users desire to know how much it will cost for each piece of food when they buy food.</p>
+                        </div>
+                    </div>
+                    <div class="chart">
+                        <div>
+                            <div><canvas id="chart3" height="400"></canvas>
+                            </div>
+                            
+                            <div class="title">
+                                Q: When you buy some fruits or vegetables, do you use a scale?
+                            </div>
+                        </div>
+
+                        <div>
+                            <p>Even though, around 70% of the users don’t use scale in the supermarket when they buy fruit or vegetables.</p>
+                        </div>
+                    </div>
+
+
+           </div>
+            </section>
             
         </section>
 
@@ -71,7 +121,7 @@
         <section class="product">
             <div class="content">
                 <div class="description">
-                    <h2>Product</h2>
+                    <h2>Our product</h2>
                     <p>A lot of people want to know the price per unit easily and quickly. So we created the best application which is called “For each item.” This application can calculate the price per unit of products. </p>                        
                 </div>
                 <img src="./img/product.png" alt="product">
@@ -83,16 +133,16 @@
             <div class="cards">
                 
                 <div class="card">
-                        <h3>1. Select the product </h3>
                         <img src="./img/how-to-selection.png" alt="">
+                        <p>1. Select the product </p>
                 </div>
                 <div class="card">
-                        <h3>2. Put the price and size </h3>
                         <img src="./img/how-to-input.png" alt="">
+                        <p>2. Set the price and size <p3>
                 </div>
                 <div class="card">
-                        <h3>3. Press calculate button </h3>
                         <img src="./img/how-to-calculation.png" alt="">
+                        <p>3. Press "Calculate"</p>
                 </div>
 
             </div>
@@ -187,9 +237,7 @@
                 <h2>Members</h2>
                 <div class="cards">
                     <div class="card">
-                        <div class="icon">
-                            <img src="./img/icon-profile-takayuki.png" alt="">
-                        </div>
+                        <img src="./img/icon-profile-takayuki.png" alt="">
                         <div class="profile">
                             <h3>Takayuki Yamaguchi</h3>
                             <p>PM, front end, back end, designer</p>
@@ -201,9 +249,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="icon">
-                            <img src="./img/icon-profile-danilo.png" alt="">
-                        </div>
+                        <img src="./img/icon-profile-danilo.png" alt="">
                         <div class="profile">
                             <h3>Danilo Mello</h3>
                             <p>Back end</p>
@@ -215,9 +261,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="icon">
-                            <img src="./img/icon-profile-shinichiro.png" alt="">
-                        </div>
+                        <img src="./img/icon-profile-shinichiro.png" alt="">
                         <div class="profile">
                             <h3>Shintaro Okamoto </h3>
                             <p>Front end</p>
@@ -230,9 +274,8 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="icon">
-                            <img src="./img/icon-profile-takayasu.png" alt="">
-                        </div>
+
+                        <img src="./img/icon-profile-takayasu.png"alt="" >
                         <div class="profile">
                             <h3>Takayasu Nasu</h3>
                             <p>Technical adviser</p>
@@ -259,5 +302,6 @@
     <!-- there is no footer -->
     <footer></footer>
 </div>
+<script src="./js/chart-setting.js" type="text/javascript"></script>
 </body>
 </html>
