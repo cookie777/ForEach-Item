@@ -191,20 +191,38 @@ header ul:last-child {
 .how-to-use .cards {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 1.5rem;
+  gap: 2.5rem;
+}
+.how-to-use .cards img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
 }
 @media (min-width: 600px) {
   .how-to-use .cards {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .how-to-use .cards img {
+    width: 100%;
   }
   .how-to-use .cards h3 {
     font-weight: 300;
   }
 }
 
+.secondary-hero {
+  background-image: url(../img/hero-background2.png);
+  background-size: 30vw auto;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+.secondary-hero .title {
+  margin-bottom: 2rem;
+}
 .secondary-hero .concept {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-auto-flow: column;
 }
 .secondary-hero .concept .catch-copy {
@@ -227,11 +245,23 @@ header ul:last-child {
   font-size: 1.5rem;
 }
 @media (min-width: 600px) {
-  .secondary-hero .concept {
-    grid-template-columns: 3fr 4fr 5fr;
-  }
   .secondary-hero .concept .catch-copy {
+    grid-template-columns: 3fr 4fr 5fr;
+    grid-template-rows: 1fr;
+    grid-auto-flow: row;
+  }
+  .secondary-hero .concept .catch-copy .catch-copy {
     margin-bottom: 0em;
+  }
+}
+@media (min-width: 600px) {
+  .secondary-hero {
+    background-size: 16rem auto;
+  }
+}
+@media (min-width: 900px) {
+  .secondary-hero {
+    background-size: 22rem auto;
   }
 }
 
