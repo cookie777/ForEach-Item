@@ -1,3 +1,8 @@
+* {
+  outline: 2px solid rgba(218, 65, 65, 0.426);
+  outline-offset: -1px;
+}
+
 html {
   font-size: 12.5px;
   scroll-behavior: smooth;
@@ -173,19 +178,22 @@ header ul:last-child {
 }
 
 .product .content {
-  display: flex;
+  display: grid;
   gap: 2.5rem;
-  justify-content: space-between;
   margin-bottom: 4rem;
-  flex-direction: column;
-  align-items: center;
+  grid-template-columns: 1fr;
 }
 .product .content .description {
   margin: auto 0;
 }
+.product .content img {
+  margin: 0 auto;
+  display: block;
+}
 @media (min-width: 900px) {
   .product .content {
-    flex-direction: row;
+    grid-template-columns: 1fr 1fr;
+    background-color: #250f50;
   }
 }
 

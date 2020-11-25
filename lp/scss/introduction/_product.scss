@@ -1,20 +1,46 @@
 .product{
 
     .content{
-        display: flex;
+        display: grid;
         gap: 2.5rem;
-        justify-content: space-between;
         margin-bottom: 4rem;
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr;
         .description{
             margin: auto 0;
         }
+
         
+        
+        img {
+            margin: 0 auto;
+            display: block;
+        }
+
         @media (min-width: 900px) {
-            flex-direction: row;
-            
+            grid-template-columns: 1fr 1fr;
+            background-color: rgb(37, 15, 80);
             
         }
     }
 }
+
+// .product{
+
+//     .content{
+//         display: flex;
+//         gap: 2.5rem;
+//         justify-content: space-between;
+//         margin-bottom: 4rem;
+//         flex-direction: column;
+//         align-items: center;
+//         .description{
+//             margin: auto 0;
+//         }
+        
+//         @media (min-width: 900px) {
+//             flex-direction: row;
+            
+            
+//         }
+//     }
+// }
