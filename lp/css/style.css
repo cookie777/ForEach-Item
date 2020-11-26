@@ -141,7 +141,6 @@ header ul:last-child {
 .user-story .scene {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
   margin-bottom: 4rem;
 }
@@ -162,6 +161,7 @@ header ul:last-child {
   height: auto;
 }
 .user-story .scene .description {
+  margin: auto 0;
   max-width: 31.5rem;
 }
 .user-story .scene .description h3 {
@@ -204,30 +204,35 @@ header ul:last-child {
   grid-template-columns: repeat(1, 1fr);
   gap: 2.5rem;
 }
+@media (min-width: 900px) {
+  .how-to-use .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 .how-to-use .cards img {
   display: block;
   margin: 0 auto;
-  width: 60%;
+  width: 70%;
+  filter: contrast(95%);
+}
+@media (min-width: 600px) {
+  .how-to-use .cards img {
+    width: 50%;
+  }
+}
+@media (min-width: 900px) {
+  .how-to-use .cards img {
+    width: 100%;
+  }
 }
 .how-to-use .cards p {
   font-weight: 700;
-  margin: 1rem auto 4rem;
+  margin: 1rem auto;
 }
 .how-to-use .cards .card {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
-}
-@media (min-width: 900px) {
-  .how-to-use .cards {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .how-to-use .cards p {
-    margin-bottom: 0;
-  }
-  .how-to-use .cards img {
-    width: 100%;
-  }
 }
 
 .survey .sentence {
@@ -275,6 +280,7 @@ header ul:last-child {
   background-size: 30vw auto;
   background-repeat: no-repeat;
   background-position: 100% 100%;
+  min-height: 24rem;
   padding-top: 4rem;
 }
 @media (min-width: 600px) {
@@ -337,6 +343,7 @@ header ul:last-child {
   width: 100%;
   background: #5bbe0d;
   height: 0.5rem;
+  bottom: -0.25rem;
   bottom: 0.5rem;
   z-index: -1;
 }
@@ -364,18 +371,15 @@ article .paragraph img {
   }
 }
 
+.tools h2 {
+  margin-bottom: 0.25rem;
+}
 .tools .cards {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(auto, auto);
   justify-content: space-around;
-  gap: 1px;
-  background-color: rgba(59, 63, 56, 0.3);
-}
-@media (min-width: 600px) {
-  .tools .cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  column-gap: 5rem;
 }
 @media (min-width: 900px) {
   .tools .cards {
@@ -383,12 +387,14 @@ article .paragraph img {
   }
 }
 .tools .cards .card {
-  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+.tools .cards .card .description {
+  margin: auto 0;
 }
 .tools .cards .card img {
   display: block;
-  margin: 0 auto;
-  max-width: 50%;
 }
 
 .members .cards {
