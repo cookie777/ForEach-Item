@@ -1,3 +1,4 @@
+
 @import "variables";
 
 .secondary-hero{
@@ -38,7 +39,7 @@
                 font-size: 1.5rem;
             }
 
-            @media (min-width: 600px) {
+            @media (min-width: $break-point-small) {
                 grid-template-columns: 3fr 4fr 5fr;
                 grid-template-rows: 1fr;
                 grid-auto-flow: row;
@@ -61,14 +62,14 @@
             height: 0.5rem;
             bottom: 0.5rem;
             z-index: -1;
-            @media (min-width: 900px) {
+            @media (min-width: $break-point-large) {
                 height: 1rem;
             }
         }
     }
 
 
-    @media (min-width: 600px) {
+    @media (min-width: $break-point-small) {
         background-size: 16rem auto;
     }
     @media (min-width: 900px) {

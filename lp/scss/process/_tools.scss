@@ -23,11 +23,11 @@
     }
 
     // when you write responsive, it must be smaller to larger
-    @media (min-width: 600px) {
+    @media (min-width: $break-point-small) {
         .cards{ grid-template-columns: repeat(2, 1fr); }
     }
     
-    @media (min-width: 900px) {
+    @media (min-width: $break-point-large) {
         .cards{ grid-template-columns: repeat(3, 1fr); }
     }
 
