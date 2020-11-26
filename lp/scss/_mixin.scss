@@ -30,3 +30,8 @@
     }
 
 }
+
+
+@function fs($size) {
+    @return calc((#{$size} / 2.34375) * 1px + (#{$size} - (#{$size} / 2.34375))*(100vw - 320px)/(750 - 320));
+  }

@@ -3,11 +3,12 @@
     .scene{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        align-items: center;
         margin-bottom: 4rem;
         &:last-child{margin-bottom: 0;}
         @include lg{
             flex-direction: row;
+            justify-content: space-between;
             &:nth-child(2){ //second story is reversed
                 flex-direction: row-reverse;
             }
@@ -16,7 +17,6 @@
         img{
             max-width: 20.5rem;//416px
             width: 100%;
-            height: auto;
         }
 
         .description{
