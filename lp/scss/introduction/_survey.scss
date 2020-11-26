@@ -33,7 +33,7 @@
 
 }
 
-@media (min-width:600px) {
+@media (min-width:$break-point-large) {
     .survey{
         .sentence{
             width: 50%;
