@@ -3,6 +3,9 @@
     .cards{
         display: grid;
         grid-template-columns: 1fr;
+        @include md{
+            grid-template-columns: repeat(2, 1fr);
+        }
         gap: 2.5rem;
         .card{
             display: grid;
@@ -15,24 +18,11 @@
                 display: block;
                 margin: auto 0;
                 max-width: 5rem;
-            }
-        }
-
-    }
-}
-
-@media (min-width: $break-point-small) {
-    .members{
-        .cards{
-            grid-template-columns: repeat(2, 1fr);
-            .card{
-                img{
+                @include md{
                     max-width: 6rem;
-
                 }
             }
         }
-    }
-    
 
+    }
 }
