@@ -13,6 +13,7 @@
         grid-template-rows: repeat(auto, auto);
         justify-content: space-around;
         column-gap: 5rem; 
+        // row-gap: -4rem;
 
         .card{
             display: grid;
@@ -22,6 +23,7 @@
             }
             img{
                 display: block; //->will be treated as block == margin auto is valid
+                max-width: 90%;
             }
         }
     }
