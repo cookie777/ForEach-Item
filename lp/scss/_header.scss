@@ -1,3 +1,4 @@
+@import "variables";
 header{
     display: flex;        
     flex-direction: column;
@@ -20,13 +21,13 @@ header{
     }
     margin-bottom: 6rem;
 
-    @media(min-width: 600px){
+    @media(min-width: $break-point-small){
         h3{
             font-size: 1.5rem;
         }
     }
 
-    @media(min-width: 900px){
+    @media(min-width: $break-point-large){
 
         flex-direction: row;
         ul{margin: 0;}

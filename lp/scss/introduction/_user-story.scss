@@ -23,7 +23,7 @@
             }  
         }
 
-        @media (min-width: 900px) {
+        @media (min-width: $break-point-large) {
             flex-direction: row;
             &:nth-child(2){ //second story is reversed
                 flex-direction: row-reverse;

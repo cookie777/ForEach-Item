@@ -1,6 +1,6 @@
 @import "variables";
 
-
+// helper boarder that let you easier to understand each block
 // * { 
 //     outline: 2px solid rgba(218, 65, 65, 0.426);
 //     outline-offset: -1px;
@@ -8,7 +8,7 @@
 
 html{
     font-size: 12.5px;
-    @media(min-width: 600px) {
+    @media(min-width: $break-point-small) {
         font-size: 16px;
     }
 
@@ -52,7 +52,7 @@ h1 {
     font-weight: 900;
     font-size: 3rem;
     line-height: 117.5%;
-    @media(min-width: 900px){
+    @media(min-width: $break-point-large){
         font-size: 4.5rem;
     }
 }
