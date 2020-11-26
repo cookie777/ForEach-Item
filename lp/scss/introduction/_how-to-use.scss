@@ -5,16 +5,28 @@
     .cards{
         display: grid;
         grid-template-columns: repeat(1,1fr);
+        @include lg{
+            grid-template-columns: repeat(3,1fr);
+        }
         gap: 2.5rem;
         img{
             display: block;
             margin: 0 auto;
-            width: 60%;
+            width: 70%;
+            filter: contrast(95%);
+
+            @include md{
+                width: 50%;
+            }
+            @include lg{
+                // box-shadow: none;
+                width: 100%;
+            }
         }
 
         p{
             font-weight: 700;
-            margin: 1rem auto 4rem;
+            margin: 1rem auto;
         }
 
         .card{
@@ -22,16 +34,5 @@
             flex-flow: column;
             justify-content: space-between;
         }
-        
-        @include lg{
-            grid-template-columns: repeat(3,1fr);
-            p {margin-bottom: 0;}
-            img{
-                width: 100%;
-            }
-        }
     }
-
-
-    
 }

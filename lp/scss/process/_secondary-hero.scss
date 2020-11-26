@@ -4,6 +4,7 @@
     background-size: 30vw auto;
     background-repeat: no-repeat;
     background-position: 100% 100%;
+    min-height: 24rem;
     padding-top: 4rem;
 
     @include md{
@@ -58,19 +59,10 @@
 
     }
 
-    span{
-        position: relative;
-        &:before{
-            content: ' ';
-            position: absolute;
-            width: 100%;
-            background: $accent-color;
-            height: 0.5rem;
-            bottom: 0.5rem;
-            z-index: -1;
-            @include lg{
-                height: 1rem;
-            }
+    @include underline{
+        bottom: 0.5rem;
+        @include lg{
+            height: 1rem;
         }
     }
 }
