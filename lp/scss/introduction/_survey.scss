@@ -1,15 +1,20 @@
-@import "variables";
-
 
 .survey{
     .sentence{
         width: 100%;
+        @include lg{
+            width: 50%;
+        }
         margin-bottom: 1.5rem;
+
     }    
 
     .charts{
         display: grid;
         grid-template-columns: 1fr;
+        @include lg{
+            grid-template-columns: repeat(3,1fr);
+        }
         gap: 2.5rem;
         .chart{
             display: flex;
@@ -18,6 +23,9 @@
 
             min-width: 0;
             margin-bottom: 4rem;
+            @include lg{
+                margin-bottom: 0;
+            }
             .title{
                 font-size: 1rem;
                 font-weight: 700;
@@ -26,23 +34,11 @@
                 margin-top: 0;
                 margin-bottom: 2rem;
             }
+ 
         }
+
     }
 
 
 
-}
-
-@media (min-width:$break-point-large) {
-    .survey{
-        .sentence{
-            width: 50%;
-        }
-        .charts{
-            grid-template-columns: repeat(3,1fr);
-            .chart{
-                margin-bottom: 0;
-            }
-        }
-    }
 }

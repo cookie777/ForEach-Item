@@ -1,10 +1,15 @@
 
-@import "variables";
-
 .tools{
     .cards{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        @include md{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include lg{
+            grid-template-columns: repeat(3, 1fr);
+        }
+
         grid-template-rows: repeat(auto, auto);
         justify-content: space-around;
 
@@ -21,19 +26,5 @@
             }
         }
     }
-
-    // when you write responsive, it must be smaller to larger
-    @media (min-width: $break-point-small) {
-        .cards{ grid-template-columns: repeat(2, 1fr); }
-    }
-    
-    @media (min-width: $break-point-large) {
-        .cards{ grid-template-columns: repeat(3, 1fr); }
-    }
-
-    // @media (min-width: 1200px) {
-    //     .cards{ grid-template-columns: repeat(4, 1fr); }
-    // }
-
 
 }

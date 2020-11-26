@@ -1,0 +1,32 @@
+
+
+
+    // when you write responsive, it must be smaller to larger
+@mixin md($min: $breakpoint-medium) {
+    @media(min-width: $min) {
+        @content;
+    }
+}
+@mixin lg($min:$breakpoint-large) {
+    @media(min-width: $min) {
+        @content;
+    }
+}
+
+// @mixin name {
+//     span{
+//         position: relative;
+//         &:before{
+//             content: ' ';
+//             position: absolute;
+//             width: 100%;
+//             background: $accent-color;
+//             height: 0.5rem;
+//             bottom: 0.5rem;
+//             z-index: -1;
+//             @include lg{
+//                 height: 1rem;
+//             }
+//         }
+//     }
+// }

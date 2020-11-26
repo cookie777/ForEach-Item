@@ -1,4 +1,3 @@
-@import "variables";
 
 .hero{
     background-image: url("../img/hero-background.png");
@@ -11,12 +10,15 @@
         color: $accent-color;
         margin-bottom: 2rem;
     }
-
-
-    @media(min-width:large){
+    
+    @include lg{
         margin-bottom: 4rem; //Usually 6rem but I put 4rem to appear the below section. 
         background-size: 30rem auto;
         p{width: 100%;}
     }
+
+
+
+
 
 }

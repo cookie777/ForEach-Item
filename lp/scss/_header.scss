@@ -1,10 +1,12 @@
-@import "variables";
 header{
     display: flex;        
     flex-direction: column;
     justify-content: space-between;
     h3{
-        font-size: 1rem;
+        font-size: 1.25rem;
+        @include md{
+            font-size: 1.5rem;
+        }
     }
 
     img{
@@ -21,18 +23,15 @@ header{
     }
     margin-bottom: 6rem;
 
-    @media(min-width: $break-point-small){
-        h3{
-            font-size: 1.5rem;
-        }
-    }
-
-    @media(min-width: $break-point-large){
-
+    
+    @include lg{
         flex-direction: row;
         ul{margin: 0;}
         li {
             margin-left: 4rem;
         }
     }
+
+
+
 }

@@ -1,4 +1,4 @@
-@import "variables";
+
 
 .how-to-use{
 
@@ -13,7 +13,8 @@
         }
 
         p{
-            text-align: center;
+            font-weight: 700;
+            margin: 1rem auto 4rem;
         }
 
         .card{
@@ -21,9 +22,10 @@
             flex-flow: column;
             justify-content: space-between;
         }
-
-        @media (min-width:$break-point-large) {
+        
+        @include lg{
             grid-template-columns: repeat(3,1fr);
+            p {margin-bottom: 0;}
             img{
                 width: 100%;
             }

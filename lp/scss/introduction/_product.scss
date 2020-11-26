@@ -1,6 +1,4 @@
 
-@import "variables";
-
 .product{
 
     .content{
@@ -8,41 +6,18 @@
         gap: 2.5rem;
         margin-bottom: 4rem;
         grid-template-columns: 1fr;
+        @include lg{
+            grid-template-columns: 5fr 7fr;
+        }
         .description{
             margin: auto 0;
         }
-
-        
         
         img {
             margin: 0 auto;
             display: block;
         }
 
-        @media (min-width: $break-point-large) {
-            grid-template-columns: 5fr 7fr;
-            
-        }
+
     }
 }
-
-// .product{
-
-//     .content{
-//         display: flex;
-//         gap: 2.5rem;
-//         justify-content: space-between;
-//         margin-bottom: 4rem;
-//         flex-direction: column;
-//         align-items: center;
-//         .description{
-//             margin: auto 0;
-//         }
-        
-//         @media (min-width: 900px) {
-//             flex-direction: row;
-            
-            
-//         }
-//     }
-// }

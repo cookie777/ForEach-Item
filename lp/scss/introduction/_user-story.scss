@@ -1,5 +1,3 @@
-@import "variables";
-
 
 .user-story{
     .scene{
@@ -9,6 +7,12 @@
         justify-content: space-between;
         margin-bottom: 4rem;
         &:last-child{margin-bottom: 0;}
+        @include lg{
+            flex-direction: row;
+            &:nth-child(2){ //second story is reversed
+                flex-direction: row-reverse;
+            }
+        }
 
         img{
             max-width: 20.5rem;//416px
@@ -23,12 +27,6 @@
             }  
         }
 
-        @media (min-width: $break-point-large) {
-            flex-direction: row;
-            &:nth-child(2){ //second story is reversed
-                flex-direction: row-reverse;
-            }
-        }
     }
 
 
