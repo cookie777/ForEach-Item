@@ -7,9 +7,9 @@ const title1 = ["Have you ever felt any frustration", "about the \"lb\" unit", "
 const title2 = ["Do you want to know how much", "it costs if you buy one piece of food?", "For example, a price for one piece of apple"];
 const title3 = ["When you buy some fruits or vegetables,","do you use a scale?"];
 
-const data1 = [1,6,1,2];
-const data2 = [4,5,0,1];
-const data3 = [0,2,1,6];
+const data1 = [1,7,1,2];
+const data2 = [4,6,0,1];
+const data3 = [0,2,1,7];
 
 const label1 = [
                     "Yes, a lot !",

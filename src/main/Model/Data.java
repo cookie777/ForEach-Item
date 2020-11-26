@@ -10,7 +10,7 @@ public class Data {
     public static final String CALCULATE = "Calculate";
     public static final String DOLLAR_SIGN = "$";
     public static final String QUANTITY = "quantity";
-    public static final String LB = "lb";
+    public static final String LB = "/ lb";
     public static final String X = "x";
     public static final String BUY_ONE = "If you buy one, it will cost";
     public static final String EMPTY = "";
